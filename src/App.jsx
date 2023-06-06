@@ -1,7 +1,7 @@
 import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import '../src/sass/main.scss';
-import Home from './components/Home';
+import Home from './components/Home/Home';
 import QuienesSomos from './components/QuienesSomos';
 import Servicios from './components/Servicios';
 import Contacto from './components/Contactanos';

@@ -1,0 +1,43 @@
+.mainHome {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div {
+        p {
+            .talentWord {
+                color: $color-text;
+                text-shadow: 7px 4px 2px rgba(223, 43, 91, 0.347);
+                
+            }
+        }
+
+        .mainButton {
+            border-radius: 10px 10px 10px 10px;
+            padding: 12px;
+            background-color: $color-text;
+            border: 1px solid $color-text;
+            transition: all 0.3s ease;
+            margin-top: 0.8rem;
+            
+
+            .mainButtonLink {
+                text-decoration: none;
+                color: white;
+                font-weight: bold;
+            }
+           
+            &:hover {
+                background-color: #ee4572;
+            }
+        }
+
+         
+    }
+    .imgMain {
+        
+    }
+
+
+}

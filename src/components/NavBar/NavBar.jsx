@@ -19,7 +19,7 @@ const NavBar = () => {
             <NavBarItems />
           </div>
           <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
-            <BsLinkedin className="fs-2 linkedinLogo" />    
+            <BsLinkedin className="linkedinLogo" />    
             </a>
         </div>
       </nav>

@@ -1,0 +1,56 @@
+.navBarStyle {
+
+    min-width: 100%;
+
+    .container-fluid {
+
+        img {
+            width: 7.5rem;
+            margin-left: 10rem;
+        }
+
+        div {
+
+            ul {
+
+                margin: auto;
+                margin-right: 5rem;
+
+                .nav-item {
+                    font-size: 1.1rem;
+
+                    .nav-link {
+                        position: relative;
+
+                        &::after {
+                            content: " ";
+                            position: absolute;
+                            left: 0;
+                            bottom: 0;
+                            width: 0;
+                            height: 2px;
+                            background-color: $color-text;
+                            transition: width 0.3s ease;
+                        }
+
+                        &:hover::after {
+                            width: 100%;
+                        }
+                    }
+
+                    .active {
+                        color: $color-text;
+                    }
+
+                }
+            }
+        }
+    }
+
+    a {
+        .linkedinLogo {
+            color: $color-text;
+            margin-right: 5rem;
+        }
+    }
+}

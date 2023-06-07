@@ -15,7 +15,7 @@ const QuienesSomos = () => {
           </p>
 
         </article>
-        <article className="fw-bold fs-5 d-flex  gap-3">
+        <article className="fw-bold fs-5 d-flex gap-3">
           <span className="arrowText"> <BiRightArrow /></span>
           <p>
             Nos especializamos en la selección de personal para todo tipo de perfiles, trabajando con diversas organizaciones. Nuestro objetivo principal es satisfacer las necesidades de nuestros clientes y establecer relaciones a largo plazo.

@@ -1,0 +1,29 @@
+.quienesSomosMain {
+
+    .titleQuienes {
+        color: $color-text;
+    }
+
+    .line {
+        border-bottom: 1px solid rgb(117, 113, 113);
+        margin: 2rem 0;
+    }
+
+    .paragraphs {
+        article {
+            .arrowText {
+                color: $color-text;
+            }
+
+            p {
+                .wordQuienes {
+                    color: $color-text;
+                }
+            }
+        }
+
+
+
+
+    }
+}

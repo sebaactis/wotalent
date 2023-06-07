@@ -1,0 +1,56 @@
+.footer {
+
+    background-color: #834f5d;
+    padding-bottom: 0.3rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+
+    .mailSection {
+
+        .mailIcon {
+            color: white;
+        }
+
+        h3 {
+            color: white;
+        }
+    }
+
+    .navbarFooter {
+
+        ul {
+
+            .nav-item {
+                color: white;
+
+                .nav-link {
+                    position: relative;
+
+                    &::after {
+                        content: " ";
+                        position: absolute;
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 2px;
+                        background-color: white;
+                        transition: width 0.3s ease;
+                    }
+
+                    &:hover::after {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+    }
+
+    .logoSection {
+        .logo {
+            width: 9rem;
+        }
+    }
+
+
+}

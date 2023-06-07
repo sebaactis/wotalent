@@ -9,14 +9,14 @@ const NavBar = () => {
     <>
       <nav className="navBarStyle navbar navbar-expand-lg">
         <div className="container-fluid">
-          <img src={logo} alt='logo' />
+          <img className="logo" src={logo} alt='logo' />
           <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span className="navbar-toggler-icon"></span>
           </button>
 
           <div className="collapse navbar-collapse" id="navbarNav">
 
-            <NavBarItems />
+            <NavBarItems isInFooter={false} />
           </div>
           <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
             <BsLinkedin className="linkedinLogo" />    

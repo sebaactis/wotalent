@@ -12,8 +12,6 @@ const Home = () => {
         
       </div>
       <img className="imgMain" src={imgMain} alt="imagen de gente trabajando" />
-      
-
 
     </main>
   )

@@ -19,7 +19,7 @@ const Servicios = () => {
             </h4>
           </div>
 
-          <div className="selectionDiv fs-5 d-flex flex-column gap-3">
+          <div className="selectionDiv fs-5 d-flex flex-column gap-3 mx-2">
             <div className="d-flex gap-3">
               <span > <BiRightArrow /></span>
               <p>

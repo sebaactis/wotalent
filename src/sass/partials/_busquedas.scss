@@ -1,0 +1,44 @@
+.busquedasSection {
+
+    margin-bottom: 2rem;
+
+    .titleBusquedas {
+        color: $color-text;
+    }
+
+    .line {
+        border-bottom: 1px solid rgb(117, 113, 113);
+        margin: 2rem 0;
+    }
+
+    .busquedasItems {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+
+        .cardBusqueda {
+            border: 1px solid $color-text;
+            width: 18rem;
+
+            .cardBody {
+                .cardTitle {
+                    font-weight: bold;
+                }
+
+                .buttonCard {
+                    border-radius: 10px 10px 10px 10px;
+                    padding: 8px;
+                    background-color: $color-text;
+                    border: 1px solid $color-text;
+                    color: white;
+                    font-weight: bold;
+                    transition: all 0.3s ease;
+
+                    &:hover {
+                        background-color: #ee4572;
+                    }
+                }
+            }
+        }
+    }
+}

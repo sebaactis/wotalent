@@ -4,7 +4,7 @@ import '../src/sass/main.scss';
 import Home from './components/Home/Home';
 import QuienesSomos from './components/QuienesSomos';
 import Servicios from './components/Servicios';
-import Contacto from './components/Contactanos';
+import Contacto from './components/Contacto';
 import Busquedas from './components/Busquedas';
 import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer';

@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif; 
+}   
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
 
 @import "./base/variables.scss";
@@ -13,11 +20,3 @@
 @import "./mediasQueries/footer.scss";
 @import "./mediasQueries/busquedas.scss";
 @import "./mediasQueries/contacto.scss";
-
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Poppins", sans-serif; 
-}

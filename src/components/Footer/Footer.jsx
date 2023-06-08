@@ -9,15 +9,15 @@ const Footer = () => {
       <section className="row">
         <section className="mailSection col-lg-4 gap-3 d-flex flex-column justify-content-center">
           <article className="d-flex gap-3 justify-content-center align-items-start">
-            <AiOutlineMail className="fs-5 mailIcon" />
+            <AiOutlineMail className="mailIcon" />
             <h3 className="fs-6">
               Contacto: <span className="m-2 fw-bold"> info@cowotalent.com.ar </span>
             </h3>
 
           </article>
 
-          <article className="d-flex gap-3 justify-content-center align-items-start">
-            <AiOutlineMail className="fs-5 mailIcon" />
+          <article className="seleccionDivFooter d-flex gap-3 justify-content-center align-items-start">
+            <AiOutlineMail className=" mailIcon" />
             <h3 className="fs-6">
               Envia tu CV:<span className="m-2 fw-bold"> seleccion@cowotalent.com.ar </span>
             </h3>

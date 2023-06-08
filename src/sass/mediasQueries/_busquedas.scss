@@ -1,0 +1,12 @@
+@media (max-width: 768px) {
+
+    .busquedasSection {
+
+        .busquedasItems {
+            grid-template-columns: 1fr;
+            justify-items: center;
+            
+        }
+    }
+
+}

@@ -1,0 +1,35 @@
+@media (max-width: 768px) {
+    .mainHome {
+
+        flex-direction: column;
+        gap: 5rem;
+
+        div {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+
+                text-align: center;
+
+                .talentWord {
+                    text-align: center;
+                }
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+        }
+
+        .imgMain {
+            width: 30rem;
+            margin-bottom: 2rem;
+        }
+
+    }
+}

@@ -1,6 +1,5 @@
-import React from 'react'
-import NavBarItems from './NavBar/NavBarItems'
-import logo from '../assets/images/logocowo.png'
+import NavBarItems from '../NavBar/NavBarItems'
+import logo from '../../assets/images/logocowo.png'
 import { AiOutlineMail } from 'react-icons/ai'
 
 const Footer = () => {

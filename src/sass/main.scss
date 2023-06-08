@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+
 @import "./base/variables.scss";
 @import "./partials/navbar.scss";
 @import "./partials/home.scss";
@@ -7,6 +8,12 @@
 @import "./partials/servicios.scss";
 @import "./partials/busquedas.scss";
 @import "./partials/contacto.scss";
+@import "./mediasQueries/navbar.scss";
+@import "./mediasQueries/home.scss";
+@import "./mediasQueries/footer.scss";
+@import "./mediasQueries/busquedas.scss";
+@import "./mediasQueries/contacto.scss";
+
 
 * {
     margin: 0;

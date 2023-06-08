@@ -2,12 +2,12 @@ import './App.css'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import '../src/sass/main.scss';
 import Home from './components/Home/Home';
-import QuienesSomos from './components/QuienesSomos';
-import Servicios from './components/Servicios';
-import Contacto from './components/Contacto';
-import Busquedas from './components/Busquedas';
+import QuienesSomos from './components/QuienesSomos/QuienesSomos';
+import Servicios from './components/Servicios/Servicios';
+import Contacto from './components/Contacto/Contacto';
+import Busquedas from './components/Busquedas/Busquedas';
 import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer';
+import Footer from './components/Footer/Footer';
 
 function App() {
 

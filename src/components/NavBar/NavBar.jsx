@@ -1,4 +1,3 @@
-import React from 'react'
 import NavBarItems from './NavBarItems'
 import logo from '../../assets/images/logocowo.png'
 import { BsLinkedin } from 'react-icons/bs'
@@ -14,13 +13,16 @@ const NavBar = () => {
             <span className="navbar-toggler-icon"></span>
           </button>
 
+
+
           <div className="collapse navbar-collapse" id="navbarNav">
 
             <NavBarItems isInFooter={false} />
-          </div>
-          <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
-            <BsLinkedin className="linkedinLogo" />    
+            <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
+              <BsLinkedin className="linkedinLogo" />
             </a>
+          </div>
+
         </div>
       </nav>
     </>

@@ -19,6 +19,24 @@
             flex-direction: column;
             gap: 2rem;
 
+            .titleDiv {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+
+                .contactIcon {
+                    font-size: 1.4rem;
+                    color: $color-text;
+                }
+
+                .titleContact {
+                    font-size: 1.4rem;
+                    margin: 0;
+                    font-weight: bold;
+
+                }
+            }
+
             .formDiv {
                 display: flex;
                 flex-direction: column;
@@ -34,23 +52,42 @@
                     height: 2rem;
                     padding: 0.2rem;
                     border: 1px solid #ccc;
-                    width: 50%;
+                    width: 80%;
                     border-radius: 4px;
                     font-weight: bold;
                 }
 
                 textarea {
                     border: 1px solid #ccc;
-                    width: 70%;
+                    width: 80%;
                     height: 18rem;
                     resize: none;
                 }
+            }
+
+            .buttonContacto {
+                border-radius: 10px 10px 10px 10px;
+                padding: 10px;
+                background-color: $color-text;
+                border: 1px solid $color-text;
+                transition: all 0.3s ease;
+                width: 80%;
+                color: white;
             }
         }
 
         .contactoCv {
             display: flex;
-            justify-content: center;
+            gap: 1rem;
+
+            .contactoCvIcon {
+                font-size: 1.4rem;
+                color: $color-text;
+            }
+
+            .titleContactoCv {
+                font-size: 1.4rem;
+            }
         }
     }
 

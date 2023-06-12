@@ -22,19 +22,29 @@ const PanelBusquedas = () => {
     }
 
     return (
-        <section className="contactoSection container">
-            <h1 className="fw-bold titleContacto my-3">Panel</h1>
+        <section className="panelSection container">
+            <h1 className="fw-bold titlePanel my-3">Panel</h1>
+            <div className="line"></div>
 
-            <form onSubmit={handleSubmit}>
-                <label htmlFor="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" onChange={(e) => setNombre(e.target.value)} value={nombre} />
+            <form className="formPanel" onSubmit={handleSubmit}>
+                <div className="formPanelDiv">
+                    <label className="fw-bold fs-5" htmlFor="nombre">Nombre</label>
+                    <input type="text" name="nombre" id="nombre" onChange={(e) => setNombre(e.target.value)} value={nombre} />
+                </div>
 
-                <label htmlFor="descripcion">Descripcion</label>
-                <input type="text" name="descripcion" id="descripcion" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} />
+                <div className="formPanelDiv">
+                    <label className="fw-bold fs-5" htmlFor="descripcion">Descripcion</label>
+                    <textarea name="descripcion" id="descripcion" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} row="10" cols="60" />
+                </div>
 
-                <label htmlFor="codigo">Codigo</label>
-                <input type="text" name="codigo" id="codigo" onChange={(e) => setCodigo(e.target.value)} value={codigo} />
-                <button> Cargar </button>
+                <div className="formPanelDiv">
+                    <label className="fw-bold fs-5" htmlFor="codigo">Codigo</label>
+                    <input type="text" name="codigo" id="codigo" onChange={(e) => setCodigo(e.target.value)} value={codigo} />
+                </div>
+
+
+
+                <button className="buttonPanel"> Cargar </button>
             </form>
 
         </section>

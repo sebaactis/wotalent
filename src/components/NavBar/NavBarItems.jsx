@@ -27,6 +27,7 @@ const NavBarItems = ({ isInFooter }) => {
             title: 'Contacto',
             url: '/contacto'
         }
+
     ];
 
     if (isInFooter) {

@@ -8,7 +8,12 @@ class daoBusqueda {
     }
 
     async addBusqueda(busqueda) {
-        busquedasModel.create(busqueda);
+        const busquedaSchema = await busquedasModel.create(busqueda);
+
+        return {
+            nombre: busquedaSchema.nombre,
+            descripcion: busquedaSchema.descripcion
+        }
     }
 }
 

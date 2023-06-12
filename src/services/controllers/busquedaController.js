@@ -13,8 +13,8 @@ export const create = async (req, res) => {
 
     const busqueda = req.body;
 
-    await manager.addBusqueda(busqueda);
+    const newBusqueda = await manager.addBusqueda(busqueda);
 
-    res.status(200).json({ status: "success", payload: busqueda });
+    res.status(201).send({ status: "success", payload: newBusqueda });
 
 }

@@ -1,48 +1,27 @@
-import React from 'react'
+import { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card';
 
 const Busquedas = () => {
 
-  const busquedas = [
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    },
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    },
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    },
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    },
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    },
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    },
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    },
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    },
-    {
-      title: "Empleado Administrativo",
-      description: "Empleado administrativo de 9 a 18hs para empresa importante de seguros"
-    }
+  const [busquedas, setBusquedas] = useState([]);
 
+  useEffect(() => {
 
-  ];
+    const obtenerDatos = async () => {
+      try {
+        const response = await fetch('http://localhost:8080/api/busquedas');
+        const data = await response.json();
+        setBusquedas(data.payload);
+      }
+
+      catch (err) {
+        console.log(err);
+      }
+    };
+
+    obtenerDatos();
+
+  }, [])
 
   return (
     <section className="busquedasSection container">
@@ -52,11 +31,11 @@ const Busquedas = () => {
       <div className="busquedasItems">
         {busquedas.map((busqueda) => {
           return (
-            <Card className="cardBusqueda" key={busqueda.title}>
+            <Card className="cardBusqueda" key={busqueda.nombre}>
               <Card.Body className="cardBody">
-                <Card.Title className="cardTitle">{busqueda.title}</Card.Title>
+                <Card.Title className="cardTitle">{busqueda.nombre}</Card.Title>
                 <Card.Text>
-                  {busqueda.description}
+                  {busqueda.descripcion}
                 </Card.Text>
                 <button className="buttonCard">Postularse!</button>
               </Card.Body>

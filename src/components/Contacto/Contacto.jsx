@@ -18,8 +18,6 @@ const Contacto = () => {
   const handleEmail = (e) => setEmail(e.target.value);
   const handleConsulta = (e) => setConsulta(e.target.value);
 
-  console.log(nombre);
-
   const enviarConsulta = (e) => {
     e.preventDefault();
 
@@ -31,12 +29,7 @@ const Contacto = () => {
       email,
       consulta
     }
-
-    console.log(objConsulta);
   }
-
-
-
 
 
   return (

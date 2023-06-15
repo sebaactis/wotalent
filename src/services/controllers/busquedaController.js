@@ -30,4 +30,9 @@ export const create = async (req, res) => {
 
 export const remove = async (req, res) => {
 
+    const codigo = req.body.codigo;
+
+    const busqueda = await manager.remove(codigo)
+
+    res.status(200).json({status: "success", payload: busqueda})
 }

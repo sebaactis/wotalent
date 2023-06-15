@@ -20,6 +20,11 @@ class BusquedaManager {
         const busqueda = await this.dao.getBusqueda(codigo);
         return busqueda
     }
+
+    async remove(codigo) {
+        const busqueda = await this.dao.removeBusqueda(codigo);
+        return busqueda
+    }
 }
 
 export default BusquedaManager;

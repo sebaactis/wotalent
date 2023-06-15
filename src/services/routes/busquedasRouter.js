@@ -6,6 +6,6 @@ const busquedas = Router();
 busquedas.get('/', getAll)
 busquedas.get('/detalle/:codigo', getOne)
 busquedas.post('/', create)
-busquedas.delete('/:code', remove)
+busquedas.delete('/', remove)
 
 export default busquedas;

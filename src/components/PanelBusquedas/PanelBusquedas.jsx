@@ -7,6 +7,7 @@ const PanelBusquedas = () => {
     const [resumen, setResumen] = useState("");
     const [descripcion, setDescripcion] = useState("");
     const [codigo, setCodigo] = useState("");
+    const [dcodigo, setDcodigo] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -36,6 +37,31 @@ const PanelBusquedas = () => {
 
     }
 
+    const handleDelete = (e) => {
+        e.preventDefault();
+
+        const busqueda = { codigo: dcodigo }
+
+        fetch('http://localhost:8080/api/busquedas', {
+            method: 'DELETE',
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(busqueda)
+        })
+            .then(response => response.json())
+            .then(data => console.log('Respuesta', data))
+            .catch(error => console.log('Error', error));
+
+
+        Swal.fire({
+            title: 'Busqueda Eliminada',
+            icon: 'success',
+            confirmButtonText: 'Cerrar'
+        }
+        )
+
+        setDcodigo("")
+    }
+
     return (
         <section className="panelSection container">
             <h1 className="fw-bold titlePanel my-3">Panel</h1>
@@ -52,7 +78,7 @@ const PanelBusquedas = () => {
                     <textarea name="resumen" id="resumen" onChange={(e) => setResumen(e.target.value)} value={resumen} row="10" cols="60" />
                 </div>
 
-                <div className="formPanelDiv">  
+                <div className="formPanelDiv">
                     <label className="fw-bold fs-5" htmlFor="descripcion">Descripcion</label>
                     <textarea name="descripcion" id="descripcion" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} row="30" cols="90" />
                 </div>
@@ -63,6 +89,11 @@ const PanelBusquedas = () => {
                 </div>
 
                 <button className="buttonPanel" disabled={nombre === "" || resumen === "" || descripcion === "" || codigo === ""}> Cargar </button>
+
+                <label className="fw-bold fs-5" htmlFor="dcodigo">Ingrese un codigo para eliminar una busqueda</label>
+                <input className="inputDelete" type="text" name="dcodigo" id="dcodigo" onChange={(e) => setDcodigo(e.target.value)} value={dcodigo} />
+                <button onClick={handleDelete} className="buttonPanel" disabled={dcodigo === ""}> Eliminar</button>
+
             </form>
 
         </section>

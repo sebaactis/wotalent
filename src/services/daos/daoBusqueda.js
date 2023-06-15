@@ -24,6 +24,15 @@ class daoBusqueda {
             descripcion: busqueda.descripcion
         }
     }
+
+    async removeBusqueda(codigo) {
+        const busqueda = await busquedasModel.deleteOne({ codigo })
+
+        return {
+            nombre: busqueda.nombre,
+            descripcion: busqueda.descripcion
+        }
+    }
 }
 
 export default daoBusqueda;

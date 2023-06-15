@@ -1,9 +1,12 @@
 import { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 const Busquedas = () => {
 
   const [busquedas, setBusquedas] = useState([]);
+
+
 
   useEffect(() => {
 
@@ -35,9 +38,11 @@ const Busquedas = () => {
               <Card.Body className="cardBody">
                 <Card.Title className="cardTitle">{busqueda.nombre}</Card.Title>
                 <Card.Text>
-                  {busqueda.descripcion}
+                  {busqueda.resumen}
                 </Card.Text>
-                <button className="buttonCard">Postularse!</button>
+                <Link to={`/busquedas/detalle/${busqueda.codigo}`}>
+                  <button className="buttonCard">Ver Detalles </button>
+                </Link>
               </Card.Body>
             </Card>
           )

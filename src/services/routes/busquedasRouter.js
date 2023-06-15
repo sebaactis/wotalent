@@ -1,9 +1,11 @@
 import { Router } from 'express';
-import { create, getAll } from '../controllers/busquedaController.js';
+import { create, getAll, getOne, remove } from '../controllers/busquedaController.js';
 
 const busquedas = Router();
 
 busquedas.get('/', getAll)
+busquedas.get('/detalle/:codigo', getOne)
 busquedas.post('/', create)
+busquedas.delete('/:code', remove)
 
 export default busquedas;

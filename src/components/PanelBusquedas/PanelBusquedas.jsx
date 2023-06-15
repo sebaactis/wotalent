@@ -1,15 +1,17 @@
-import { useState } from "react";
+import { useRef, useState } from "react";
+import Swal from 'sweetalert2'
 
 const PanelBusquedas = () => {
 
     const [nombre, setNombre] = useState("");
+    const [resumen, setResumen] = useState("");
     const [descripcion, setDescripcion] = useState("");
     const [codigo, setCodigo] = useState("");
 
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        const busqueda = { nombre, descripcion, codigo }
+        const busqueda = { nombre, resumen, descripcion, codigo }
 
         fetch('http://localhost:8080/api/busquedas', {
             method: 'POST',
@@ -19,6 +21,19 @@ const PanelBusquedas = () => {
             .then(response => response.json())
             .then(data => console.log('Respuesta', data))
             .catch(error => console.log('Error', error));
+
+
+        Swal.fire({
+            title: 'Busqueda Agregada',
+            icon: 'success',
+            confirmButtonText: 'Cerrar'
+        })
+
+        setNombre("")
+        setResumen("")
+        setDescripcion("")
+        setCodigo("")
+
     }
 
     return (
@@ -33,8 +48,13 @@ const PanelBusquedas = () => {
                 </div>
 
                 <div className="formPanelDiv">
+                    <label className="fw-bold fs-5" htmlFor="resumen">Resumen</label>
+                    <textarea name="resumen" id="resumen" onChange={(e) => setResumen(e.target.value)} value={resumen} row="10" cols="60" />
+                </div>
+
+                <div className="formPanelDiv">  
                     <label className="fw-bold fs-5" htmlFor="descripcion">Descripcion</label>
-                    <textarea name="descripcion" id="descripcion" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} row="10" cols="60" />
+                    <textarea name="descripcion" id="descripcion" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} row="30" cols="90" />
                 </div>
 
                 <div className="formPanelDiv">
@@ -42,9 +62,7 @@ const PanelBusquedas = () => {
                     <input type="text" name="codigo" id="codigo" onChange={(e) => setCodigo(e.target.value)} value={codigo} />
                 </div>
 
-
-
-                <button className="buttonPanel"> Cargar </button>
+                <button className="buttonPanel" disabled={nombre === "" || resumen === "" || descripcion === "" || codigo === ""}> Cargar </button>
             </form>
 
         </section>

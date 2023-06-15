@@ -4,6 +4,7 @@ const busquedasCollection = 'busquedas';
 
 const busquedasSchema = new Schema({
     nombre: { type: Schema.Types.String, required: true },
+    resumen: { type: Schema.Types.String, required: true },
     descripcion: { type: Schema.Types.String, required: true },
     codigo: { type: Schema.Types.String, required: true }
 })

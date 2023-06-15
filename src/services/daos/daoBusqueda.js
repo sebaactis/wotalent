@@ -15,6 +15,15 @@ class daoBusqueda {
             descripcion: busquedaSchema.descripcion
         }
     }
+
+    async getBusqueda(codigo) {
+        const busqueda = await busquedasModel.findOne({ codigo });
+
+        return {
+            nombre: busqueda.nombre,
+            descripcion: busqueda.descripcion
+        }
+    }
 }
 
 export default daoBusqueda;

@@ -1,0 +1,28 @@
+.busquedaDetalleSection {
+
+    margin-bottom: 2rem;
+
+    .titleBusquedasDetalle {
+        color: $color-text;
+    }
+
+    .line {
+        border-bottom: 1px solid rgb(117, 113, 113);
+        margin: 2rem 0;
+    }
+
+    .buttonBusquedaDetalle {
+        margin-top: 2rem;
+        border-radius: 10px 10px 10px 10px;
+        padding: 7px;
+        background-color: $color-text;
+        border: 1px solid $color-text;
+        width: 10%;
+        color: white;
+        transition: all 0.3s ease;
+    }
+    
+    .buttonBusquedaDetalle:hover {
+        background-color: #bd395d;
+    }
+}

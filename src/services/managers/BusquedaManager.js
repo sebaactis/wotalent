@@ -15,6 +15,11 @@ class BusquedaManager {
         const newBusqueda = await this.dao.addBusqueda(busqueda);
         return newBusqueda;
     }
+
+    async getOne(codigo) {
+        const busqueda = await this.dao.getBusqueda(codigo);
+        return busqueda
+    }
 }
 
 export default BusquedaManager;

@@ -34,3 +34,41 @@
 
     }
 }
+
+@media (min-width: 1250px) and (max-width: 1370px) {
+
+    .mainHome {
+        gap: 5rem;
+
+        div {
+
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            p {
+
+                text-align: center;
+                
+
+                .talentWord {
+                    text-align: center;
+                    text-shadow: 2px 3px 2px rgba(223, 43, 91, 0.347);
+                }
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+        }
+
+        .imgMain {
+            width: 45rem;
+            margin-bottom: 2rem;
+        }
+
+    }
+
+}

@@ -14,7 +14,7 @@ const PanelBusquedas = () => {
 
         const busqueda = { nombre, resumen, descripcion, codigo }
 
-        fetch('http://localhost:8080/api/busquedas', {
+        fetch('https://wotalent.glitch.me/api/busquedas', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(busqueda)
@@ -42,7 +42,7 @@ const PanelBusquedas = () => {
 
         const busqueda = { codigo: dcodigo }
 
-        fetch('http://localhost:8080/api/busquedas', {
+        fetch('https://wotalent.glitch.me/api/busquedas', {
             method: 'DELETE',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(busqueda)

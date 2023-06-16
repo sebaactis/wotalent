@@ -14,7 +14,7 @@ const PanelBusquedas = () => {
 
         const busqueda = { nombre, resumen, descripcion, codigo }
 
-        fetch('http://localhost:8080/api/busquedas', {
+        fetch('https://wotalent.netlify.app/api/busquedas', {
             method: 'POST',
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(busqueda)

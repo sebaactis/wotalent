@@ -11,7 +11,7 @@ const BusquedaDetail = () => {
 
         const obtenerBusqueda = async () => {
             try {
-                const response = await fetch(`http://localhost:8080/api/busquedas/detalle/${codigo}`)
+                const response = await fetch(`https://wotalent.glitch.me/api/busquedas/detalle/${codigo}`)
                 const data = await response.json();
                 setBusqueda(data.payload);
             }

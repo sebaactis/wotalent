@@ -12,7 +12,7 @@ const Busquedas = () => {
 
     const obtenerDatos = async () => {
       try {
-        const response = await fetch('https://wotalent.netlify.app/api/busquedas');
+        const response = await fetch('http://localhost:8080/api/busquedas');
         const data = await response.json();
         setBusquedas(data.payload);
       }

@@ -1,9 +1,9 @@
 import NavBarItems from '../NavBar/NavBarItems'
-import logo from '../../assets/images/logocowo.png'
+import logo from '../../assets/images/wologo.png'
 import { AiOutlineMail } from 'react-icons/ai'
 
 const Footer = () => {
-  return (
+  return (  
     <footer className="footer">
 
       <section className="row">

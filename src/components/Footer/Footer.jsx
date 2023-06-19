@@ -10,7 +10,7 @@ const Footer = ({ accessToken, setAccessToken }) => {
 
     const token = localStorage.getItem('accessToken')
 
-    fetch('https://wotalent.netlify.app/api/session/logout', {
+    fetch('https://wotalent.glitch.me/api/session/logout', {
       method: 'POST',
       headers: {
         "Content-Type": "application/json",

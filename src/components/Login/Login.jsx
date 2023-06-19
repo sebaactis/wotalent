@@ -13,7 +13,7 @@ const Login = ({ setAccessToken }) => {
 
             const usuario = { email: email, password: password }
 
-            fetch('https://wotalent.netlify.app/api/session/login', {
+            fetch('https://wotalent.glitch.me/api/session/login', {
                 method: 'POST',
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(usuario)

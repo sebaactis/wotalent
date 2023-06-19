@@ -10,31 +10,27 @@ const Busquedas = () => {
 
 
   useEffect(() => {
+    const obtenerDatos = async () => {
+      try {
+        const response = await fetch('https://wotalent.glitch.me/api/busquedas');
+        const data = await response.json();
+        setBusquedas(data.payload);
+      }
 
-    setTimeout(() => {
-      const obtenerDatos = async () => {
-        try {
-          const response = await fetch('https://wotalent.glitch.me/api/busquedas');
-          const data = await response.json();
-          setBusquedas(data.payload);
-        }
+      catch (err) {
+        console.log(err);
+      }
 
-        catch (err) {
-          console.log(err);
-        }
+      finally {
+        setLoading(false);
+      }
+    };
 
-        finally {
-          setLoading(false);
-        }
-      };
+    obtenerDatos();
 
-      obtenerDatos();
+    return () => setLoading(true);
+  }, [3000])
 
-      return () => setLoading(true);
-    }, [3000])
-
-
-  }, [])
 
   if (loading) {
     return (

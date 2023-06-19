@@ -1,30 +1,55 @@
 import { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
+import { HashLoader } from 'react-spinners';
 
 const Busquedas = () => {
 
   const [busquedas, setBusquedas] = useState([]);
-
+  const [loading, setLoading] = useState(true);
 
 
   useEffect(() => {
 
-    const obtenerDatos = async () => {
-      try {
-        const response = await fetch('https://wotalent.glitch.me/api/busquedas');
-        const data = await response.json();
-        setBusquedas(data.payload);
-      }
+    setTimeout(() => {
+      const obtenerDatos = async () => {
+        try {
+          const response = await fetch('https://wotalent.glitch.me/api/busquedas');
+          const data = await response.json();
+          setBusquedas(data.payload);
+        }
 
-      catch (err) {
-        console.log(err);
-      }
-    };
+        catch (err) {
+          console.log(err);
+        }
 
-    obtenerDatos();
+        finally {
+          setLoading(false);
+        }
+      };
+
+      obtenerDatos();
+
+      return () => setLoading(true);
+    }, [3000])
+
 
   }, [])
+
+  if (loading) {
+    return (
+
+      <div>
+        <HashLoader
+          color={"#DF2B5C"}
+          size={100}
+          className="spinnerBusqueda"
+        />
+      </div>
+
+    )
+
+  }
 
   return (
     <section className="busquedasSection container">

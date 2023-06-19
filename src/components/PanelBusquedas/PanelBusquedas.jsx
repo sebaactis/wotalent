@@ -62,6 +62,7 @@ const PanelBusquedas = () => {
         setDcodigo("")
     }
 
+
     return (
         <section className="panelSection container">
             <h1 className="fw-bold titlePanel my-3">Panel</h1>

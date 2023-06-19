@@ -46,7 +46,7 @@ const Contacto = () => {
 
           <div className="formDiv">
 
-            <label for="name">Nombre</label>
+            <label htmlFor="name">Nombre</label>
             <input onChange={handleName} value={nombre} required="required" type="text" name="apellido">
             </input>
 
@@ -54,34 +54,34 @@ const Contacto = () => {
 
           <div className="formDiv">
 
-            <label for="apellido">Apellido</label>
+            <label htmlFor="apellido">Apellido</label>
             <input onChange={handleApellido} value={apellido} type="text" name="apellido">
             </input>
 
           </div>
           <div className="formDiv">
 
-            <label for="empresa">Empresa</label>
+            <label htmlFor="empresa">Empresa</label>
             <input onChange={handleEmpresa} value={empresa} type="text" name="empresa">
             </input>
 
           </div>
           <div className="formDiv">
 
-            <label for="telefono">Telefono</label>
+            <label htmlFor="telefono">Telefono</label>
             <input onChange={handleTelefono} value={telefono} type="tel" name="telefono">
             </input>
 
           </div>
           <div className="formDiv">
 
-            <label for="email">Email</label>
+            <label htmlFor="email">Email</label>
             <input onChange={handleEmail} value={email} type="email" name="email">
             </input>
           </div>
 
           <div className="formDiv">
-            <label for="consulta">Consulta</label>
+            <label htmlFor="consulta">Consulta</label>
             <textarea className="fw-bold" onChange={handleConsulta} value={consulta} row="10" cols="60" name="consulta"></textarea>
 
           </div>

@@ -1,5 +1,5 @@
 import './App.css'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import '../src/sass/main.scss';
 import Home from './components/Home/Home';
 import QuienesSomos from './components/QuienesSomos/QuienesSomos';
@@ -10,13 +10,25 @@ import NavBar from './components/NavBar/NavBar';
 import Footer from './components/Footer/Footer';
 import PanelBusquedas from './components/PanelBusquedas/PanelBusquedas';
 import BusquedaDetail from './components/Busquedas/BusquedaDetail';
+import Login from './components/Login/Login';
+import { useEffect, useState } from 'react';
 
 function App() {
+
+  const [accessToken, setAccessToken] = useState(false);
+
+  useEffect(() => {
+    const token = localStorage.getItem('accessToken');
+
+    if (token) {
+      setAccessToken(true);
+    }
+  }, [accessToken])
 
   return (
 
     <BrowserRouter>
-      <NavBar />
+      <NavBar accessToken={accessToken} />
       <Routes>
         <Route exact path="/" element={<Home />} />
         <Route exact path="/quienes-somos" element={<QuienesSomos />} />
@@ -24,9 +36,10 @@ function App() {
         <Route exact path="/busquedas" element={<Busquedas />} />
         <Route exact path="/busquedas/detalle/:codigo" element={<BusquedaDetail />} />
         <Route exact path="/contacto" element={<Contacto />} />
-        <Route exact path="/panel" element={<PanelBusquedas />} />
+        <Route exact path="/login" element={accessToken ? <Navigate to="/panel" /> : <Login setAccessToken={setAccessToken} />} />
+        <Route exact path="/panel" element={accessToken ? <PanelBusquedas /> : <Navigate to="/login" />} />
       </Routes>
-      <Footer />
+      <Footer accessToken={accessToken} setAccessToken={setAccessToken} />
     </BrowserRouter>
 
   )

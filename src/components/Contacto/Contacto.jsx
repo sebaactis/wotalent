@@ -91,7 +91,7 @@ const Contacto = () => {
 
         <div className="col-lg-5 contactoCv">
           <RiMailSendLine className="contactoCvIcon" />
-          <h2 className="titleContactoCv">Tambien podés enviar tu CV a <span className="fw-bold">seleccion@cowotalent.com.ar</span></h2>
+          <h2 className="titleContactoCv">Tambien podés enviar tu CV a <span className="fw-bold">seleccion@wotalent.com.ar</span></h2>
         </div>
 
       </article>

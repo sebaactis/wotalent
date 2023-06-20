@@ -66,7 +66,7 @@ const Footer = () => {
 
         <section className="logoSection d-flex flex-column justify-content-center align-items-center col-lg-4">
           <img className="logo" src={logo} alt='logo' />
-          <h3 className="derechosText text-white fw-bold"> © Todos los derechos reservados COWO Talent 2023</h3>
+          <h3 className="derechosText text-white fw-bold"> © Todos los derechos reservados WO Talent 2023</h3>
           {accessToken ? <button onClick={handleSession}> Cerrar Sesion </button> : <Link to="/login"> <button> Login </button> </Link>}
         </section>
       </section>

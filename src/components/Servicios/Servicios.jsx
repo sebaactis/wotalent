@@ -23,7 +23,7 @@ const Servicios = () => {
             <div className="d-flex gap-3">
               <span > <BiRightArrow /></span>
               <p>
-                En <span className="fw-bold selectionWord">COWO Talent </span>brindamos el servicio de búsqueda y selección de personal para todo tipo de perfiles.
+                En <span className="fw-bold selectionWord">WO Talent </span>brindamos el servicio de búsqueda y selección de personal para todo tipo de perfiles.
               </p>
             </div>
             <div className="d-flex gap-3">

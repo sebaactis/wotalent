@@ -1,7 +1,10 @@
-import { useState } from "react"
+import { useContext, useState } from "react"
 import Swal from 'sweetalert2'
+import { SessionContext } from "../../context/SessionContext"
 
-const Login = ({ setAccessToken }) => {
+const Login = () => {
+
+    const { setAccessToken } = useContext(SessionContext)
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")

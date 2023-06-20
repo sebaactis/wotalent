@@ -3,7 +3,7 @@ import logo from '../../assets/images/wologo.png'
 import { BsLinkedin } from 'react-icons/bs'
 import { Link } from 'react-router-dom'
 
-const NavBar = ({accessToken}) => {
+const NavBar = () => {
 
   return (
     <>
@@ -16,7 +16,7 @@ const NavBar = ({accessToken}) => {
 
           <div className="collapse navbar-collapse" id="navbarNav">
 
-            <NavBarItems isInFooter={false} accessToken={accessToken} />
+            <NavBarItems isInFooter={false} />
             <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
               <BsLinkedin className="linkedinLogo" />
             </a>

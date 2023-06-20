@@ -1,6 +1,10 @@
+import { useContext } from 'react';
 import { NavLink } from 'react-router-dom'
+import { SessionContext } from '../../context/SessionContext';
 
-const NavBarItems = ({ isInFooter, accessToken }) => {
+const NavBarItems = ({ isInFooter }) => {
+
+    const { accessToken } = useContext(SessionContext);
 
     const items = [
         {

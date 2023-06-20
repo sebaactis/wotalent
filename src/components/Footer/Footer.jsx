@@ -27,7 +27,8 @@ const Footer = () => {
         Swal.fire({
           title: 'Cerraste sesion correctamente',
           icon: 'success',
-          confirmButtonText: 'Cerrar'
+          confirmButtonText: 'Cerrar',
+          confirmButtonColor: '#DF2B5C'
         })
       })
       .catch(error => console.log('Error', error));

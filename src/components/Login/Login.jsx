@@ -32,7 +32,8 @@ const Login = () => {
                     Swal.fire({
                         title: 'Usuario o contraseña erronea',
                         icon: 'error',
-                        confirmButtonText: 'Cerrar'
+                        confirmButtonText: 'Cerrar',
+                        confirmButtonColor: '#DF2B5C'
                     })
 
                 })

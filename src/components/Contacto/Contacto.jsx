@@ -31,7 +31,6 @@ const Contacto = () => {
     }
   }
 
-
   return (
     <section className="contactoSection container">
       <h1 className="fw-bold titleContacto my-3">Contacto</h1>

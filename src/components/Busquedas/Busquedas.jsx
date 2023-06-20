@@ -8,7 +8,6 @@ const Busquedas = () => {
   const [busquedas, setBusquedas] = useState([]);
   const [loading, setLoading] = useState(true);
 
-
   useEffect(() => {
     const obtenerDatos = async () => {
       try {
@@ -29,8 +28,7 @@ const Busquedas = () => {
     obtenerDatos();
 
     return () => setLoading(true);
-  }, [3000])
-
+  }, [])
 
   if (loading) {
     return (
@@ -42,16 +40,13 @@ const Busquedas = () => {
           className="spinnerBusqueda"
         />
       </div>
-
     )
-
   }
 
   return (
     <section className="busquedasSection container">
       <h1 className="fw-bold titleBusquedas my-3">Busquedas</h1>
       <div className="line"></div>
-
       <div className="busquedasItems">
         {busquedas.map((busqueda) => {
           return (

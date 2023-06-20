@@ -20,9 +20,7 @@ const QuienesSomos = () => {
 
   const controls = animateParagraphs();
 
-
   return (
-
 
     <section className="quienesSomosMain container">
       <h1 className="fw-bold titleQuienes my-3">¿Quiénes Somos?</h1>
@@ -79,7 +77,6 @@ const QuienesSomos = () => {
         </motion.article>
 
       </div>
-
 
     </section>
   )

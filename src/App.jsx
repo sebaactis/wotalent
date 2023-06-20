@@ -27,9 +27,7 @@ function App() {
   }, [accessToken])
 
   return (
-
     <BrowserRouter>
-
       <NavBar />
       <Routes>
         <Route exact path="/" element={<Home />} />
@@ -42,9 +40,7 @@ function App() {
         <Route exact path="/panel" element={accessToken ? <PanelBusquedas /> : <Navigate to="/login" />} />
       </Routes>
       <Footer />
-
     </BrowserRouter>
-
   )
 }
 

@@ -29,19 +29,15 @@ const BusquedaDetail = () => {
             <h1 className="fw-bold titleBusquedasDetalle my-3">Detalle de busqueda</h1>
             <div className="line"></div>
             <div className="itemsCont d-flex flex-column gap-3">
-
                 <article>
                     <h3 className="fw-bold">Nombre</h3>
                     <p >{busqueda.nombre}</p>
                 </article>
-
                 <article>
                     <h3 className="fw-bold">Descripcion</h3>
                     <p>{busqueda.descripcion}</p>
                 </article>
-
             </div>
-
             <Link to="/busquedas"> <button className="buttonBusquedaDetalle fw-bold"> Volver a busquedas </button> </Link>
         </section>
     )

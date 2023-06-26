@@ -32,14 +32,17 @@ const Busquedas = () => {
 
   if (loading) {
     return (
-
-      <div>
-        <HashLoader
-          color={"#DF2B5C"}
-          size={100}
-          className="spinnerBusqueda"
-        />
-      </div>
+      <section className="busquedasSection container">
+        <h1 className="fw-bold titleBusquedas my-3">Busquedas</h1>
+        <div className="line"></div>
+        <div>
+          <HashLoader
+            color={"#DF2B5C"}
+            size={100}
+            className="spinnerBusqueda"
+          />
+        </div>
+      </section>
     )
   }
 

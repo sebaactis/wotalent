@@ -1,6 +1,7 @@
 import { useContext, useState } from "react"
 import Swal from 'sweetalert2'
 import { SessionContext } from "../../context/SessionContext"
+import { BeatLoader } from 'react-spinners';
 
 const Login = () => {
 
@@ -8,6 +9,7 @@ const Login = () => {
 
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [boton, setBoton] = useState(false)
 
     const handleSubmit = (e) => {
         e.preventDefault();
@@ -65,7 +67,7 @@ const Login = () => {
                     </input>
                 </div>
 
-                <button> Loguearse </button>
+                <button disabled={email === "" || password === ""} onClick={() => setBoton(!boton)}> {boton ? <BeatLoader color={"white"} size={"8px"} /> : "Ingresar"} </button>
             </form>
 
         </section>

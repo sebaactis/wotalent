@@ -1,42 +1,36 @@
 .mainHome {
 
-    margin-bottom: 5rem;
-    
-
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 10rem;
+    margin-top: 1.5rem;
 
-    div {
-        p {
-            .talentWord {
-                color: $color-text;
-                text-shadow: 7px 4px 2px rgba(223, 43, 91, 0.347);
-                
-            }
-        }
+    .imgDiv {
 
-        .mainButton {
-            border-radius: 10px 10px 10px 10px;
-            padding: 12px;
-            background-color: $color-text;
-            border: 1px solid $color-text;
-            transition: all 0.3s ease;
-            margin-top: 0.8rem;
-            
+        min-width: 100%;
+        height: 38rem;
+        background-image: url("src/assets/images/mainImagen.jpg");
+        background-color: #5c5c5c;
+        background-blend-mode: multiply;
+        position: relative;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
-            .mainButtonLink {
-                text-decoration: none;
+        .textImgDiv {
+
+            p {
+                font-size: 3rem;
                 color: white;
-                font-weight: bold;
-            }
-           
-            &:hover {
-                background-color: #ee4572;
+                text-align: center;
             }
         }
-
-         
     }
 
 }

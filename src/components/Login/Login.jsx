@@ -30,13 +30,14 @@ const Login = () => {
                         localStorage.setItem('accessToken', data.accessToken)
                         return
                     }
-
                     Swal.fire({
                         title: 'Usuario o contraseña erronea',
                         icon: 'error',
                         confirmButtonText: 'Cerrar',
                         confirmButtonColor: '#DF2B5C'
                     })
+
+                    setBoton(false);
 
                 })
                 .catch(error => {

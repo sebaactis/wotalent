@@ -2,6 +2,25 @@
 
     margin-bottom: 2rem;
 
+    .busquedasTexts {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 4rem;
+
+        p {
+            .talentWord {
+                color: $color-text;
+                text-shadow: 7px 4px 2px rgba(223, 43, 91, 0.347);
+
+            }
+        }
+    }
+
+
+
     .titleBusquedas {
         color: $color-text;
     }

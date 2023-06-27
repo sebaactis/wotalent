@@ -35,6 +35,10 @@ const Busquedas = () => {
       <section className="busquedasSection container">
         <h1 className="fw-bold titleBusquedas my-3">Busquedas</h1>
         <div className="line"></div>
+        <div className="busquedasTexts">
+          <h3 className="fs-1"> ¡Encontrá lo que estás buscando! </h3>
+          <p className="fs-1">Sigamos impulsando el <span className="talentWord fw-bold">talento</span></p>
+        </div>
         <div>
           <HashLoader
             color={"#DF2B5C"}
@@ -50,6 +54,10 @@ const Busquedas = () => {
     <section className="busquedasSection container">
       <h1 className="fw-bold titleBusquedas my-3">Busquedas</h1>
       <div className="line"></div>
+      <div className="busquedasTexts">
+        <h3 className="fs-1"> ¡Encontrá lo que estás buscando! </h3>
+        <p className="fs-1">Sigamos impulsando el <span className="talentWord fw-bold">talento</span></p>
+      </div>
       <div className="busquedasItems">
         {busquedas.map((busqueda) => {
           return (

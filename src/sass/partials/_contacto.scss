@@ -74,7 +74,7 @@
                 color: white;
                 transition: all 0.3s ease;
             }
-            
+
             .buttonContacto:hover {
                 background-color: #bd395d;
             }
@@ -82,18 +82,57 @@
 
         .contactoCv {
             display: flex;
-            gap: 1rem;
+            flex-direction: column;
+            gap: 2rem;
 
-            .contactoCvIcon {
-                font-size: 1.4rem;
-                color: $color-text;
+            .mailTextContacto {
+
+                display: flex;
+                gap: 1rem;
+
+                .contactoCvIcon {
+                    font-size: 1.5rem;
+                    color: $color-text;
+                }
+
+                .titleContactoCv {
+                    font-size: 1.4rem;
+                }
             }
 
-            .titleContactoCv {
-                font-size: 1.4rem;
+            .mailTextRedes {
+                display: flex;
+                gap: 1rem;
+
+                .contactoRedesIcon {
+                    font-size: 1.3rem;
+                    color: $color-text;
+                    margin-top: 0.3rem;
+                }
             }
+
+            .redesContacto {
+
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+
+                a {
+                    .linkedinLogo {
+                        color: $color-text;
+                        font-size: 2.2rem;
+                        margin-left: 2.5rem;
+                        transition: all 0.3s ease;
+                    }
+
+                    .linkedinLogo:hover {
+                        color: #ee4572;
+                    }
+                }
+            }
+
+
         }
     }
-
 
 }

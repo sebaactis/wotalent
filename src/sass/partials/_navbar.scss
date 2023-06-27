@@ -10,7 +10,6 @@
             
         }
 
-
         div {
 
             ul {
@@ -49,16 +48,4 @@
         }
     }
 
-    a {
-        .linkedinLogo {
-            color: $color-text;
-            font-size: 2.2rem;
-            margin-left: 2.5rem;
-            transition: all 0.3s ease;
-        }
-
-        .linkedinLogo:hover {
-            color: #ee4572;
-        }
-    }
 }

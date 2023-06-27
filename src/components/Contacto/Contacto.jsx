@@ -1,6 +1,10 @@
 import { useState } from 'react'
 import { AiOutlineQuestionCircle } from 'react-icons/ai'
 import { RiMailSendLine } from 'react-icons/ri'
+import { BsLinkedin, BsInstagram } from 'react-icons/bs'
+import { IoPeople } from "react-icons/io5";
+
+
 
 const Contacto = () => {
 
@@ -89,8 +93,23 @@ const Contacto = () => {
         </form>
 
         <div className="col-lg-5 contactoCv">
-          <RiMailSendLine className="contactoCvIcon" />
-          <h2 className="titleContactoCv">Tambien podés enviar tu CV a <span className="fw-bold">seleccion@wotalent.com.ar</span></h2>
+          <div className="mailTextContacto">
+            <RiMailSendLine className="contactoCvIcon" />
+            <h2 className="titleContactoCv">Tambien podés enviar tu CV a <span className="fw-bold">seleccion@wotalent.com.ar</span></h2>
+          </div>
+          <div className="mailTextRedes">
+            <IoPeople className="contactoRedesIcon" />
+            <h2 className="fs-4"> O ver nuestras redes acá </h2>
+          </div>
+          <div className="redesContacto">
+            <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
+              <BsLinkedin className="linkedinLogo" />
+            </a>
+            <a href="https://www.instagram.com/wo.talent/" target="_blank">
+              <BsInstagram className="linkedinLogo" />
+            </a>
+          </div>
+
         </div>
 
       </article>

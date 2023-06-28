@@ -41,7 +41,7 @@ const Busquedas = () => {
         </div>
         <div>
           <HashLoader
-            color={"#DF2B5C"}
+            color={"#992244"}
             size={100}
             className="spinnerBusqueda"
           />
@@ -64,7 +64,7 @@ const Busquedas = () => {
             <Card className="cardBusqueda" key={busqueda.nombre}>
               <Card.Body className="cardBody">
                 <Card.Title className="cardTitle">{busqueda.nombre}</Card.Title>
-                <Card.Text>
+                <Card.Text className="cardText">
                   {busqueda.resumen}
                 </Card.Text>
                 <Link to={`/busquedas/detalle/${busqueda.codigo}`}>

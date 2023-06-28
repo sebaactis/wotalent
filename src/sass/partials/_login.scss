@@ -1,6 +1,6 @@
 .sectionLogin {
     .titleLogin {
-        color: $color-text;
+        color: $color-first;
     }
 
     .line {
@@ -40,8 +40,8 @@
             border-radius: 10px 10px 10px 10px;
             padding: 10px;
             width: 100px;
-            background-color: $color-text;
-            border: 1px solid $color-text;
+            background-color: $color-second;
+            border: 1px solid $color-second;
             color: white;
             font-weight: bold;
             transition: all 0.3s ease;
@@ -49,7 +49,7 @@
 
 
             &:hover {
-                background-color: #ee4572;
+                background-color: #992244;  
             }
 
         

@@ -76,7 +76,7 @@ const PanelBusquedas = () => {
 
                 <div className="formPanelDiv">
                     <label className="fw-bold fs-5" htmlFor="resumen">Resumen</label>
-                    <textarea name="resumen" id="resumen" onChange={(e) => setResumen(e.target.value)} value={resumen} row="10" cols="60" />
+                    <textarea maxLength={100} name="resumen" id="resumen" onChange={(e) => setResumen(e.target.value)} value={resumen} row="10" cols="60" />
                 </div>
 
                 <div className="formPanelDiv">

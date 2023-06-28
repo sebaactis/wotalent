@@ -1,6 +1,6 @@
 .panelSection {
     .titlePanel {
-        color: $color-text;
+        color: $color-first;
     }
 
     .line {
@@ -43,15 +43,15 @@
             margin-top: 0.3rem;
             border-radius: 10px 10px 10px 10px;
             padding: 10px;
-            background-color: $color-text;
-            border: 1px solid $color-text;
+            background-color: $color-second;
+            border: 1px solid $color-second;
             transition: all 0.3s ease;
             color: white;
             transition: all 0.3s ease;
         }
 
         .buttonPanel:hover {
-            background-color: #bd395d;
+            background-color: #992244;
         }
 
         .inputDelete {

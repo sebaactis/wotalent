@@ -3,7 +3,7 @@
     margin-bottom: 2rem;
 
     .titleBusquedasDetalle {
-        color: $color-text;
+        color: $color-first;
     }
 
     .line {
@@ -11,18 +11,29 @@
         margin: 2rem 0;
     }
 
+    .itemsCont {
+        .busquedaDetalleDescripcion {
+            white-space: pre;
+
+            .busquedaDetalleDescripcionText {
+                font-size: 1.3rem;
+                
+            }
+        }
+    }
+
     .buttonBusquedaDetalle {
         margin-top: 2rem;
         border-radius: 10px 10px 10px 10px;
         padding: 7px;
-        background-color: $color-text;
-        border: 1px solid $color-text;
+        background-color: $color-second;
+        border: 1px solid $color-second;
         width: 10%;
         color: white;
         transition: all 0.3s ease;
     }
     
     .buttonBusquedaDetalle:hover {
-        background-color: #bd395d;
+        background-color: #992244;
     }
 }

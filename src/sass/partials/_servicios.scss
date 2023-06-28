@@ -2,7 +2,7 @@
 
 
     .titleServicios {
-        color: $color-text;
+        color: $color-first;
     }
 
     .line {
@@ -15,7 +15,7 @@
             .subTitleDiv {
                 span {
                     .servicesIcon {
-                        color: $color-text;
+                        color: $color-second;
                     }
                 }
             }
@@ -25,7 +25,7 @@
                 div {
                     p {
                         .selectionWord {
-                            color: $color-text;
+                            color: $color-first;
                         }
                     }
 

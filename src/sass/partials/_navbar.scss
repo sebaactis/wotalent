@@ -30,7 +30,7 @@
                             bottom: 0;
                             width: 0;
                             height: 2px;
-                            background-color: $color-text;
+                            background-color: $color-first;
                             transition: width 0.3s ease;
                         }
 
@@ -40,7 +40,7 @@
                     }
 
                     .active {
-                        color: $color-text;
+                        color: $color-first;
                     }
 
                 }

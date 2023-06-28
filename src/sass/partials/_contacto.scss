@@ -3,7 +3,7 @@
     margin-bottom: 5rem;
 
     .titleContacto {
-        color: $color-text;
+        color: $color-first;
     }
 
     .line {
@@ -26,7 +26,7 @@
 
                 .contactIcon {
                     font-size: 1.4rem;
-                    color: $color-text;
+                    color: $color-second;
                 }
 
                 .titleContact {
@@ -68,8 +68,8 @@
             .buttonContacto {
                 border-radius: 10px 10px 10px 10px;
                 padding: 10px;
-                background-color: $color-text;
-                border: 1px solid $color-text;
+                background-color: $color-second;
+                border: 1px solid $color-second;
                 width: 80%;
                 color: white;
                 transition: all 0.3s ease;
@@ -92,7 +92,7 @@
 
                 .contactoCvIcon {
                     font-size: 1.5rem;
-                    color: $color-text;
+                    color: $color-second;
                 }
 
                 .titleContactoCv {
@@ -106,7 +106,7 @@
 
                 .contactoRedesIcon {
                     font-size: 1.3rem;
-                    color: $color-text;
+                    color: $color-second;
                     margin-top: 0.3rem;
                 }
             }
@@ -119,7 +119,7 @@
 
                 a {
                     .linkedinLogo {
-                        color: $color-text;
+                        color: $color-second;
                         font-size: 2.2rem;
                         margin-left: 2.5rem;
                         transition: all 0.3s ease;

@@ -3,7 +3,7 @@
     padding-bottom: 4.5rem;
 
     .titleQuienes {
-        color: $color-text;
+        color: $color-first;
     }
 
     .line {
@@ -14,12 +14,12 @@
     .paragraphs {
         article {
             .arrowText {
-                color: $color-text;
+                color: $color-second;
             }
 
             p {
                 .wordQuienes {
-                    color: $color-text;
+                    color: $color-first;
                 }
             }
         }

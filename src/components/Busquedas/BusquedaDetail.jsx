@@ -30,12 +30,10 @@ const BusquedaDetail = () => {
             <div className="line"></div>
             <div className="itemsCont d-flex flex-column gap-3">
                 <article>
-                    <h3 className="fw-bold">Nombre</h3>
-                    <p >{busqueda.nombre}</p>
+                    <h2 className="fw-bold">{busqueda.nombre}</h2>
                 </article>
-                <article>
-                    <h3 className="fw-bold">Descripcion</h3>
-                    <p>{busqueda.descripcion}</p>
+                <article className="busquedaDetalleDescripcion">
+                    <p className="busquedaDetalleDescripcionText">{busqueda.descripcion}</p>
                 </article>
             </div>
             <Link to="/busquedas"> <button className="buttonBusquedaDetalle fw-bold"> Volver a busquedas </button> </Link>

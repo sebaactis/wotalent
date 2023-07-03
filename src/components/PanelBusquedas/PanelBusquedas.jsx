@@ -27,7 +27,8 @@ const PanelBusquedas = () => {
         Swal.fire({
             title: 'Busqueda Agregada',
             icon: 'success',
-            confirmButtonText: 'Cerrar'
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#DF2B5C'
         })
 
         setNombre("")
@@ -55,7 +56,8 @@ const PanelBusquedas = () => {
         Swal.fire({
             title: 'Busqueda Eliminada',
             icon: 'success',
-            confirmButtonText: 'Cerrar'
+            confirmButtonText: 'Cerrar',
+            confirmButtonColor: '#DF2B5C'
         }
         )
 

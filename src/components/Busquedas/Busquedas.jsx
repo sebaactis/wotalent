@@ -2,6 +2,7 @@ import { useEffect, useState } from 'react'
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom';
 import { HashLoader } from 'react-spinners';
+import CardItem from './CardItem';
 
 const Busquedas = () => {
 
@@ -61,17 +62,7 @@ const Busquedas = () => {
       <div className="busquedasItems">
         {busquedas.map((busqueda) => {
           return (
-            <Card className="cardBusqueda" key={busqueda.nombre}>
-              <Card.Body className="cardBody">
-                <Card.Title className="cardTitle">{busqueda.nombre}</Card.Title>
-                <Card.Text className="cardText">
-                  {busqueda.resumen}
-                </Card.Text>
-                <Link to={`/busquedas/detalle/${busqueda.codigo}`}>
-                  <button className="buttonCard">Ver Detalles </button>
-                </Link>
-              </Card.Body>
-            </Card>
+            <CardItem key={busqueda._id} busqueda={busqueda} />
           )
         })}
       </div>

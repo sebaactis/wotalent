@@ -9,7 +9,6 @@
         justify-content: center;
         align-items: center;
         margin-bottom: 4rem;
-
         p {
             .talentWord {
                 color: $color-first;
@@ -18,8 +17,6 @@
             }
         }
     }
-
-
 
     .titleBusquedas {
         color: $color-first;
@@ -36,49 +33,62 @@
         gap: 3rem;
 
         .cardBusqueda {
-            border: 2px inset #970f35;
-            box-shadow: 8px 8px 8px 0px rgba(112, 19, 45, 0.75);
+            border: 1px solid rgb(211, 210, 210);
+            border-radius: 10px;
+            box-shadow: 8px 8px 8px 0px rgba(101, 89, 92, 0.384);
             width: 18rem;
-            transition: all 0.2s ease;
-
-            &:hover {
-                transform: translateY(-5px);
-            }
+            padding: 1rem;
 
             .cardBody {
 
                 display: flex;
                 flex-direction: column;
-                height: 320px;
-
+                height: 240px;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
 
                 .cardTitle {
                     font-weight: bold;
                     text-align: center;
-                    font-size: 1.5rem;
+                    font-size: 1.6rem;
+                    font-style: italic;
+                    position: absolute;
+                    top: 0;
+                    background-color: rgba(209, 209, 209, 0.843);
+                    min-width: 100%;
+                    height: 73px;
+                    border-radius: 5px;
+                    padding-top: 0.7rem;
                 }
 
                 .cardText {
-                    font-size: 1.2rem;
+                    font-size: 1.05rem;
                     margin-bottom: 2.7rem;
-                    margin-top: 0.4rem;
-                }   
+                    margin-top: 4rem;
+                    text-align: center;
+                    font-weight: bold;
+
+                }
 
                 .buttonCard {
                     border-radius: 10px 10px 10px 10px;
-                    padding: 8px;
-                    background-color: $color-second ;
-                    border: 1px solid $color-second ;
+                    padding: 8px 80px;
+                    background-color: $color-first;
+                    border: 1px solid $color-first;
                     color: white;
                     font-weight: bold;
                     transition: all 0.3s ease;
                     position: absolute;
                     bottom: 0;
-                    left: 5.3rem;
-                    margin: 0.4rem 0;
+                    left: 1.3rem;
+                    margin: 0.7rem 0;
 
                     &:hover {
                         background-color: #992244;
+                        border: 1px solid #992244;
                     }
                 }
             }

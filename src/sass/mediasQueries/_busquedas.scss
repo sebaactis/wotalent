@@ -5,6 +5,15 @@
         .busquedasItems {
             grid-template-columns: 1fr;
             justify-items: center;
+
+            .cardBusqueda  {
+                .cardBody {
+                    .buttonCard {
+                        padding: 5px 70px;
+                        left: 0.5rem;
+                    }
+                }
+            }
         }
 
         .busquedasTexts {

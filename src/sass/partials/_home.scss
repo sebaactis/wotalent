@@ -30,6 +30,66 @@
                 color: white;
                 text-align: center;
             }
+
+        }
+
+        .wrapper {
+            box-sizing: content-box;
+            display: flex;
+            font-size: 2.5rem;
+            margin-top: 1rem;
+            margin-right: 10rem;
+
+            p {
+                color: white;
+                margin-right: 1rem;
+            }
+
+            .words {
+                display: flex;
+
+                span {
+                    color: $color-first;
+                    font-weight: bold;
+                    position: absolute;
+                    animation: spin_words2 9s ease 2s infinite backwards;
+                    
+                }
+
+                span:nth-child(1) {
+                    animation-delay: 0s;
+                    opacity: 0;
+                }
+
+                span:nth-child(2) {
+                    animation-delay: 3s;
+                    opacity: 0;
+                }
+
+                span:nth-child(3) {
+                    animation-delay: 6s;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    @keyframes spin_words2 {
+        0% {
+            opacity: 0;
+            transform: translate3d(0, -70%, 0);
+        }
+
+        2.5%,
+        25% {
+            opacity: 1;
+            transform: translateZ(0);
+        }
+
+        27.5%,
+        100% {
+            opacity: 0;
+            transform: translate3d(0, 70%, 0);
         }
     }
 

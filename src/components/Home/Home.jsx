@@ -3,7 +3,8 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
 
-  const text = "Somos wo talent"
+
+  const text = "Somos WO TALENT"
   const text2 = "Buscamos tu candidato ideal"
 
   return (
@@ -35,6 +36,15 @@ const Home = () => {
               {letter}
             </motion.span>
           ))}
+        </div>
+
+        <div className="wrapper">
+          <p>WO Talent es: </p>
+          <div className="words">
+            <span className="textLetter">Palabra 1</span>
+            <span className="textLetter">Palabra 2</span>
+            <span className="textLetter">Palabra 3</span>
+          </div>
         </div>
       </div>
       <div>

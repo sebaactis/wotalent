@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 const Home = () => {
 
-
   const text = "Somos WO TALENT"
   const text2 = "Buscamos tu candidato ideal"
 
@@ -16,7 +15,7 @@ const Home = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0.1 }}
+              transition={{ delay: index * 0.08, duration: 0.1 }}
               className="textLetter"
             >
               {letter}
@@ -30,7 +29,7 @@ const Home = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1, duration: 0. }}
+              transition={{ delay: index * 0.05, duration: 0.1 }}
               className="textLetter"
             >
               {letter}
@@ -48,7 +47,7 @@ const Home = () => {
         </div>
       </div>
       <div>
-        <img src={proceso} width={500} height={500} />
+        <img src={proceso} width={1000} height={500} />
       </div>
     </main>
   )

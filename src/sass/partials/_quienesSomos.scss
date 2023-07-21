@@ -9,23 +9,36 @@
     .line {
         border-bottom: 1px solid rgb(117, 113, 113);
         margin: 2rem 0;
+        
     }
 
-    .paragraphs {
-        article {
-            .arrowText {
-                color: $color-second;
-            }
+    .graficosQuienesSomos {
+        display: flex;
+        margin-top: 6rem;
+        gap: 2rem;
 
-            p {
-                .wordQuienes {
-                    color: $color-first;
-                }
+        .graficoArticle {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+
+            
+            .iconoGrafico {
+                width: 6.25rem;
+            }
+    
+            .tituloGrafico {
+                text-align: center;
+                font-weight: bold;
+            }
+    
+            .descGrafico {
+                text-align: center;
             }
         }
 
-
-
-
+        
     }
 }

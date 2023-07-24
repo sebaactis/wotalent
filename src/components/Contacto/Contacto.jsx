@@ -44,7 +44,7 @@ const Contacto = () => {
         <form onSubmit={enviarConsulta} className="form col-lg-7">
           <div className="titleDiv">
             <AiOutlineQuestionCircle className="contactIcon" />
-            <h3 className="titleContact">¡Realizá tu consulta aqui!</h3>
+            <h3 className="titleContact">Hacenos tu consulta</h3>
           </div>
 
           <div className="formDiv">
@@ -95,11 +95,11 @@ const Contacto = () => {
         <div className="col-lg-5 contactoCv">
           <div className="mailTextContacto">
             <RiMailSendLine className="contactoCvIcon" />
-            <h2 className="titleContactoCv">Tambien podés enviar tu CV a <span className="fw-bold">seleccion@wotalent.com.ar</span></h2>
+            <h2 className="titleContactoCv">Envianos tu CV <span className="fw-bold">seleccion@wotalent.com.ar</span></h2>
           </div>
           <div className="mailTextRedes">
             <IoPeople className="contactoRedesIcon" />
-            <h2 className="fs-4"> O ver nuestras redes acá </h2>
+            <h2 className="fs-4"> Seguinos en nuestras redes </h2>
           </div>
           <div className="redesContacto">
             <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">

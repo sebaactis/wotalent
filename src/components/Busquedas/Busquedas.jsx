@@ -37,7 +37,7 @@ const Busquedas = () => {
         <h1 className="fw-bold titleBusquedas my-3">Busquedas</h1>
         <div className="line"></div>
         <div className="busquedasTexts">
-          <h3 className="fs-1"> ¡Encontrá lo que estás buscando! </h3>
+        <h3 className="fs-1"> Estás a un paso de tu próxima oportunidad </h3>
           <p className="fs-1">Sigamos impulsando el <span className="talentWord fw-bold">talento</span></p>
         </div>
         <div>
@@ -56,7 +56,7 @@ const Busquedas = () => {
       <h1 className="fw-bold titleBusquedas my-3">Busquedas</h1>
       <div className="line"></div>
       <div className="busquedasTexts">
-        <h3 className="fs-1"> ¡Encontrá lo que estás buscando! </h3>
+      <h3 className="fs-1"> Estás a un paso de tu próxima oportunidad </h3>
         <p className="fs-1">Sigamos impulsando el <span className="talentWord fw-bold">talento</span></p>
       </div>
       <div className="busquedasItems">

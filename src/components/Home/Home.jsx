@@ -39,7 +39,6 @@ const Home = () => {
         >
         <Link to="/quienes-somos"> <button className="btnConocenos">Conocenos</button> </Link>
         </motion.div>
-       
       </div>
       <div>
         <img src={proceso} width={1000} height={500} />

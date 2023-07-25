@@ -54,7 +54,7 @@ const Servicios = () => {
               className="d-flex gap-3">
               <span > <BiRightArrow /></span>
               <p>
-                Nuestro objetivo es encontrar al candidato perfecto que se ajuste tanto al puesto solicitado por el cliente (pasarlo a vos) como a la cultura de tu empresa, para lograr resultados exitosos.
+              Nuestro objetivo es encontrar al candidato perfecto que se ajuste a la búsqueda y a la cultura de tu empresa para lograr resultados exitosos.
               </p>
             </motion.div>
             <motion.div
@@ -71,7 +71,7 @@ const Servicios = () => {
               animate={controls}
               className="d-flex gap-3">
               <span > <BiRightArrow /></span>
-              <p>Nos enfocamos en encontrar los mejores candidatos de manera rápida y eficiente, utilizando métodos efectivos de selección. Estamos comprometidos en encontrar el talento que tu empresa necesita para crecer y prosperar.
+              <p>Nos caracterizamos por ser estratégicos y eficientes utilizando métodos efectivos de selección.
 
               </p>
             </motion.div>
@@ -83,7 +83,7 @@ const Servicios = () => {
           <div className="d-flex gap-3 subTitleDiv ">
             <span> <BsFileEarmarkMedical className="fs-4 servicesIcon" /> </span>
             <h4 className="fw-bold">
-              Examanes psicotécnicos
+              Examenes psicotécnicos
             </h4>
           </div>
 

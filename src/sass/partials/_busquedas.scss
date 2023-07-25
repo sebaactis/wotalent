@@ -12,7 +12,9 @@
         p {
             .talentWord {
                 color: $color-first;
-                text-shadow: 7px 4px 2px rgba(223, 43, 91, 0.347);
+                animation: letrasAnimacion 6s infinite;
+                transition: all 0.5s ease-in-out;
+                
             }
         }
     }
@@ -98,4 +100,22 @@
 .spinnerBusqueda {
     margin: auto;
     margin-top: 10rem;
+}
+
+@keyframes letrasAnimacion {
+    0% {
+        color: $color-first
+    }
+
+    25% {
+        color: $color-second
+    }
+
+    50% {
+        color: black;
+    }
+
+    100% {
+        color: $color-first
+    }
 }

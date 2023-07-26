@@ -10,13 +10,17 @@ const PanelBusquedas = () => {
     const [dcodigo, setDcodigo] = useState("");
 
     const handleSubmit = (e) => {
+
+        const token = localStorage.getItem('accessToken');
+
         e.preventDefault();
 
         const busqueda = { nombre, resumen, descripcion, codigo }
 
         fetch('https://wotalent.glitch.me/api/busquedas', {
             method: 'POST',
-            headers: { "Content-Type": "application/json" },
+            headers: { 
+                "Content-Type": "application/json", 'Authorization': `Bearer ${token}` },
             body: JSON.stringify(busqueda)
         })
             .then(response => response.json())
@@ -41,11 +45,13 @@ const PanelBusquedas = () => {
     const handleDelete = (e) => {
         e.preventDefault();
 
+        const token = localStorage.getItem('accessToken');
+
         const busqueda = { codigo: dcodigo }
 
         fetch('https://wotalent.glitch.me/api/busquedas', {
             method: 'DELETE',
-            headers: { "Content-Type": "application/json" },
+            headers: { "Content-Type": "application/json", 'Authorization': `Bearer ${token}`},
             body: JSON.stringify(busqueda)
         })
             .then(response => response.json())

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import proceso from '../../assets/images/proceso.jpg';
+import proceso from '../../assets/images/proceso.png';
 import { motion } from 'framer-motion';
 
 const Home = () => {
@@ -41,7 +41,7 @@ const Home = () => {
         </motion.div>
       </div>
       <div>
-        <img src={proceso} width={1000} height={500} />
+        <img src={proceso} width={500} height={500} />
       </div>
     </main>
   )

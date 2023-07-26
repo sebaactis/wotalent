@@ -13,7 +13,7 @@
     .graficosQuienesSomos {
         display: flex;
         margin-top: 6rem;
-        gap: 2rem;
+        gap: 3rem;
 
         .graficoArticle {
 
@@ -21,19 +21,20 @@
             flex-direction: column;
             align-items: center;
             gap: 1rem;
-
             
             .iconoGrafico {
                 width: 6.25rem;
             }
     
             .tituloGrafico {
-                text-align: center;
+                text-align: center;   
                 font-weight: bold;
+                max-width: 90%;
             }
     
             .descGrafico {
                 text-align: center;
+                max-width: 90%;
             }
         }
 

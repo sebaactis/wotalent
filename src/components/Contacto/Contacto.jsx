@@ -3,6 +3,7 @@ import { AiOutlineQuestionCircle } from 'react-icons/ai'
 import { RiMailSendLine } from 'react-icons/ri'
 import { BsLinkedin, BsInstagram } from 'react-icons/bs'
 import { IoPeople } from "react-icons/io5";
+import Swal from 'sweetalert2';
 
 
 
@@ -33,6 +34,30 @@ const Contacto = () => {
       email,
       consulta
     }
+
+    fetch('https://wotalent.glitch.me/api/busquedas/contacto', {
+      method: 'POST',
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(objConsulta)
+    })
+    .then(response => response.json())
+    .then(data => console.log(data))
+    .catch(err => console.log(err))
+
+    setNombre("")
+    setApellido("")
+    setEmpresa("")
+    setTelefono("")
+    setEmail("")
+    setConsulta("")
+
+    Swal.fire({
+      title: 'Consulta Enviada',
+      icon: 'success',
+      confirmButtonText: 'Cerrar',
+      confirmButtonColor: '#DF2B5C'
+  })
+
   }
 
   return (

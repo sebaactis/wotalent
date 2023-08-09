@@ -13,7 +13,7 @@ const NavBarItems = ({ isInFooter }) => {
         },
 
         {
-            title: 'Quienes Somos',
+            title: 'Quiénes Somos',
             url: '/quienes-somos'
         },
 
@@ -23,7 +23,7 @@ const NavBarItems = ({ isInFooter }) => {
         },
 
         {
-            title: 'Busquedas',
+            title: 'Búsquedas',
             url: '/busquedas'
         },
 
@@ -41,7 +41,7 @@ const NavBarItems = ({ isInFooter }) => {
         },
 
         {
-            title: 'Quienes Somos',
+            title: 'Quiénes Somos',
             url: '/quienes-somos'
         },
 
@@ -51,7 +51,7 @@ const NavBarItems = ({ isInFooter }) => {
         },
 
         {
-            title: 'Busquedas',
+            title: 'Búsquedas',
             url: '/busquedas'
         },
 

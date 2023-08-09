@@ -12,8 +12,7 @@
         p {
             .talentWord {
                 color: $color-first;
-                animation: letrasAnimacion 6s infinite;
-                transition: all 0.5s ease-in-out;
+                animation: letrasAnimacion 2s;
                 
             }
         }
@@ -104,18 +103,10 @@
 
 @keyframes letrasAnimacion {
     0% {
-        color: $color-first
-    }
-
-    25% {
-        color: $color-second
-    }
-
-    50% {
-        color: black;
+        opacity: 0;
     }
 
     100% {
-        color: $color-first
+        opacity: 1;
     }
 }

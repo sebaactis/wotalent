@@ -61,7 +61,7 @@ const Footer = () => {
           <article className="seleccionDivFooter d-flex gap-3 justify-content-center align-items-start">
             <AiOutlineMail className="mailIcon" />
             <h3 className="fs-6">
-              Envia tu CV:<span className="m-2 fw-bold"> seleccion@wotalent.com.ar </span>
+              Enviá tu CV:<span className="m-2 fw-bold"> seleccion@wotalent.com.ar </span>
             </h3>
 
           </article>

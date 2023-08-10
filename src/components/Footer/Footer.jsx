@@ -1,5 +1,5 @@
+/* eslint-disable react/react-in-jsx-scope */
 import NavBarItems from '../NavBar/NavBarItems'
-import logo from '../../assets/images/wologo.png'
 import logo2 from '../../assets/images/wologo2.png'
 import { AiOutlineMail } from 'react-icons/ai'
 import { Link } from 'react-router-dom'
@@ -8,19 +8,17 @@ import { useContext } from 'react'
 import { SessionContext } from '../../context/SessionContext'
 
 const Footer = () => {
-
-  const { accessToken, setAccessToken } = useContext(SessionContext);
+  const { accessToken, setAccessToken } = useContext(SessionContext)
 
   const handleSession = () => {
-
     const token = localStorage.getItem('accessToken')
 
     fetch('https://wotalent.glitch.me/api/session/logout', {
       method: 'POST',
       headers: {
-        "Content-Type": "application/json",
+        'Content-Type': 'application/json',
         Authorization: `Bearer ${token}`
-      },
+      }
 
     })
       .then(response => response.json())
@@ -32,18 +30,17 @@ const Footer = () => {
           confirmButtonColor: '#DF2B5C'
         })
       })
-      .catch(error => console.log('Error', error));
+      .catch(error => console.log('Error', error))
 
     localStorage.removeItem('accessToken')
 
-    setAccessToken(false);
+    setAccessToken(false)
   }
 
   return (
     <footer className="footer">
 
       <section className="row">
-       
 
         <section className="navbarFooter col-lg-4 d-flex justify-content-center">
           <NavBarItems isInFooter={true} />
@@ -73,9 +70,9 @@ const Footer = () => {
           <h3 className="derechosText text-white fw-bold"> © Todos los derechos reservados WO Talent 2023</h3>
           {accessToken ? <button onClick={handleSession}> Cerrar Sesion </button> : <Link to="/login"> <button> Login </button> </Link>}
         </section>
-      </section>  
+      </section>
     </footer>
-  ) 
+  )
 }
 
 export default Footer

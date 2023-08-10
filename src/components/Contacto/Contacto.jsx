@@ -1,30 +1,28 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useState } from 'react'
 import { AiOutlineQuestionCircle } from 'react-icons/ai'
 import { RiMailSendLine } from 'react-icons/ri'
 import { BsLinkedin, BsInstagram } from 'react-icons/bs'
-import { IoPeople } from "react-icons/io5";
-import Swal from 'sweetalert2';
-
-
+import { IoPeople } from 'react-icons/io5'
+import Swal from 'sweetalert2'
 
 const Contacto = () => {
+  const [nombre, setNombre] = useState('')
+  const [apellido, setApellido] = useState('')
+  const [empresa, setEmpresa] = useState('')
+  const [telefono, setTelefono] = useState('')
+  const [email, setEmail] = useState('')
+  const [consulta, setConsulta] = useState('')
 
-  const [nombre, setNombre] = useState("");
-  const [apellido, setApellido] = useState("");
-  const [empresa, setEmpresa] = useState("");
-  const [telefono, setTelefono] = useState("");
-  const [email, setEmail] = useState("");
-  const [consulta, setConsulta] = useState("");
-
-  const handleName = (e) => setNombre(e.target.value);
-  const handleApellido = (e) => setApellido(e.target.value);
-  const handleEmpresa = (e) => setEmpresa(e.target.value);
-  const handleTelefono = (e) => setTelefono(e.target.value);
-  const handleEmail = (e) => setEmail(e.target.value);
-  const handleConsulta = (e) => setConsulta(e.target.value);
+  const handleName = (e) => setNombre(e.target.value)
+  const handleApellido = (e) => setApellido(e.target.value)
+  const handleEmpresa = (e) => setEmpresa(e.target.value)
+  const handleTelefono = (e) => setTelefono(e.target.value)
+  const handleEmail = (e) => setEmail(e.target.value)
+  const handleConsulta = (e) => setConsulta(e.target.value)
 
   const enviarConsulta = (e) => {
-    e.preventDefault();
+    e.preventDefault()
 
     const objConsulta = {
       nombre,
@@ -37,19 +35,19 @@ const Contacto = () => {
 
     fetch('https://wotalent.glitch.me/api/busquedas/contacto', {
       method: 'POST',
-      headers: { "Content-Type": "application/json" },
+      headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(objConsulta)
     })
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(err => console.log(err))
 
-    setNombre("")
-    setApellido("")
-    setEmpresa("")
-    setTelefono("")
-    setEmail("")
-    setConsulta("")
+    setNombre('')
+    setApellido('')
+    setEmpresa('')
+    setTelefono('')
+    setEmail('')
+    setConsulta('')
 
     Swal.fire({
       title: 'Consulta Enviada',
@@ -57,7 +55,6 @@ const Contacto = () => {
       confirmButtonText: 'Cerrar',
       confirmButtonColor: '#DF2B5C'
     })
-
   }
 
   return (
@@ -110,7 +107,7 @@ const Contacto = () => {
 
           <div className="formDiv">
             <label htmlFor="consulta">Consulta</label>
-            <textarea className="fw-bold" onChange={handleConsulta} value={consulta} row="10" cols="60" name="consulta"></textarea>
+            <textarea className="fw-bold" onChange={handleConsulta} value={consulta} cols="60" name="consulta"></textarea>
 
           </div>
 
@@ -128,15 +125,17 @@ const Contacto = () => {
           </div>
           <div className="redesContacto">
             <div className="d-flex gap-3 justify-content-start">
-              <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
+              <a href="https://www.linkedin.com/company/cowotalent/" target="_blank" rel="noreferrer">
                 <BsLinkedin className="linkedinLogo" />
               </a>
-              <p className="fw-bold fs-5">Linkedin</p>
+              <p >Linkedin</p>
             </div>
-
-            <a href="https://www.instagram.com/wo.talent/" target="_blank">
-              <BsInstagram className="linkedinLogo" />
-            </a>
+            <div className="d-flex gap-3 justify-content-start">
+              <a href="https://www.instagram.com/wo.talent/" target="_blank" rel="noreferrer">
+                <BsInstagram className="linkedinLogo" />
+              </a>
+              <p >Instagram</p>
+            </div>
           </div>
 
         </div>

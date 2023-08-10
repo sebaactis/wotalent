@@ -1,10 +1,10 @@
-import { Link } from 'react-router-dom';
-import proceso from '../../assets/images/proceso.png';
-import { motion } from 'framer-motion';
+/* eslint-disable react/react-in-jsx-scope */
+import { Link } from 'react-router-dom'
+import proceso from '../../assets/images/proceso.png'
+import { motion } from 'framer-motion'
 
 const Home = () => {
-
-  const text2 = "Buscamos tu candidato ideal"
+  const text2 = 'Buscamos tu candidato ideal'
 
   return (
     <main className="mainHome">
@@ -24,18 +24,10 @@ const Home = () => {
           ))}
         </div>
 
-        {/* <div className="wrapper">
-          <p>WO Talent es: </p>
-          <div className="words">
-            <span className="textLetter">Palabra 1</span>
-            <span className="textLetter">Palabra 2</span>
-            <span className="textLetter">Palabra 3</span>
-          </div>
-        </div> */}
         <motion.div
-        initial={{opacity: 0, y: -100}}
-        animate={{opacity: 1, y: 0}}
-        transition={{delay: 2, duration: 0.5}}
+        initial={{ opacity: 0, y: -100 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 2, duration: 0.5 }}
         >
         <Link to="/quienes-somos"> <button className="btnConocenos">Conocenos</button> </Link>
         </motion.div>
@@ -47,4 +39,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default Home

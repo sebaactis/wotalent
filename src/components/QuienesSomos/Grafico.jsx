@@ -1,11 +1,13 @@
-import { motion } from 'framer-motion';
+/* eslint-disable react/react-in-jsx-scope */
+/* eslint-disable react/prop-types */
+import { motion } from 'framer-motion'
 
-const Grafico = ({icono, titulo, descripcion}) => {
+const Grafico = ({ icono, titulo, descripcion }) => {
   return (
     <motion.article className="graficoArticle"
-    initial={{opacity: 0, y: -100}}
-    animate={{opacity: 1, y: 0}}
-    transition={{delay: 0.5, duration: 0.3}}
+    initial={{ opacity: 0, y: -100 }}
+    animate={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.5, duration: 0.3 }}
     >
 
         <img className="iconoGrafico" src={icono} />

@@ -1,9 +1,10 @@
+/* eslint-disable react/prop-types */
 import React from 'react'
-import Card from 'react-bootstrap/Card';
-import { Link } from 'react-router-dom';
+import Card from 'react-bootstrap/Card'
+import { Link } from 'react-router-dom'
 
 const CardItem = ({ busqueda }) => {
-    return (
+  return (
         <Card className="cardBusqueda">
             <Card.Body className="cardBody">
                     <Card.Title className="cardTitle">{busqueda.nombre}</Card.Title>
@@ -15,7 +16,7 @@ const CardItem = ({ busqueda }) => {
                 </Link>
             </Card.Body>
         </Card>
-    )
+  )
 }
 
 export default CardItem

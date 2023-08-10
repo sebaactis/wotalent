@@ -1,32 +1,28 @@
+/* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useState } from 'react'
-import { HashLoader } from 'react-spinners';
-import CardItem from './CardItem';
+import { HashLoader } from 'react-spinners'
+import CardItem from './CardItem'
 
 const Busquedas = () => {
-
-  const [busquedas, setBusquedas] = useState([]);
-  const [loading, setLoading] = useState(true);
+  const [busquedas, setBusquedas] = useState([])
+  const [loading, setLoading] = useState(true)
 
   useEffect(() => {
     const obtenerDatos = async () => {
       try {
-        const response = await fetch('https://wotalent.glitch.me/api/busquedas');
-        const data = await response.json();
-        setBusquedas(data.payload);
+        const response = await fetch('https://wotalent.glitch.me/api/busquedas')
+        const data = await response.json()
+        setBusquedas(data.payload)
+      } catch (err) {
+        console.log(err)
+      } finally {
+        setLoading(false)
       }
+    }
 
-      catch (err) {
-        console.log(err);
-      }
+    obtenerDatos()
 
-      finally {
-        setLoading(false);
-      }
-    };
-
-    obtenerDatos();
-
-    return () => setLoading(true);
+    return () => setLoading(true)
   }, [])
 
   if (loading) {
@@ -40,7 +36,7 @@ const Busquedas = () => {
         </div>
         <div>
           <HashLoader
-            color={"#992244"}
+            color={'#992244'}
             size={100}
             className="spinnerBusqueda"
           />

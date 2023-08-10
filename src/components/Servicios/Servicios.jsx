@@ -4,25 +4,22 @@ import { BsFileEarmarkMedical } from 'react-icons/bs'
 import { BiRightArrow } from 'react-icons/bi'
 import { useAnimation, motion } from 'framer-motion'
 
-
 const Servicios = () => {
-
-
   const animateParagraphs = () => {
-    const controls = useAnimation();
+    const controls = useAnimation()
 
     useEffect(() => {
       controls.start(() => ({
         x: 0,
         opacity: 1,
         transition: { delay: 0.2, duration: 0.4 }
-      }));
-    }, [controls]);
+      }))
+    }, [controls])
 
-    return controls;
-  };
+    return controls
+  }
 
-  const controls = animateParagraphs();
+  const controls = animateParagraphs()
 
   return (
     <section className="serviciosSection container">
@@ -94,7 +91,6 @@ const Servicios = () => {
           </motion.p>
 
         </article>
-
 
       </div>
 

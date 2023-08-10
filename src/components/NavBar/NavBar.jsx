@@ -1,9 +1,9 @@
+/* eslint-disable react/react-in-jsx-scope */
 import NavBarItems from './NavBarItems'
 import logo from '../../assets/images/wologo.png'
 import { Link } from 'react-router-dom'
 
 const NavBar = () => {
-
   return (
     <>
       <nav className="navBarStyle navbar navbar-expand-lg">
@@ -24,4 +24,4 @@ const NavBar = () => {
   )
 }
 
-export default NavBar;
+export default NavBar

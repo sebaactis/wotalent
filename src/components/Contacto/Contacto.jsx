@@ -40,9 +40,9 @@ const Contacto = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(objConsulta)
     })
-    .then(response => response.json())
-    .then(data => console.log(data))
-    .catch(err => console.log(err))
+      .then(response => response.json())
+      .then(data => console.log(data))
+      .catch(err => console.log(err))
 
     setNombre("")
     setApellido("")
@@ -56,7 +56,7 @@ const Contacto = () => {
       icon: 'success',
       confirmButtonText: 'Cerrar',
       confirmButtonColor: '#DF2B5C'
-  })
+    })
 
   }
 
@@ -127,9 +127,13 @@ const Contacto = () => {
             <h2 className="fs-4"> Seguinos en nuestras redes </h2>
           </div>
           <div className="redesContacto">
-            <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
-              <BsLinkedin className="linkedinLogo" />
-            </a>
+            <div className="d-flex gap-3 justify-content-start">
+              <a href="https://www.linkedin.com/company/cowotalent/" target="_blank">
+                <BsLinkedin className="linkedinLogo" />
+              </a>
+              <p className="fw-bold fs-5">Linkedin</p>
+            </div>
+
             <a href="https://www.instagram.com/wo.talent/" target="_blank">
               <BsInstagram className="linkedinLogo" />
             </a>

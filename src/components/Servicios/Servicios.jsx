@@ -34,7 +34,7 @@ const Servicios = () => {
           <div className="d-flex gap-3 subTitleDiv">
             <span> <RiUserSearchLine className="fs-4 servicesIcon" /> </span>
             <h4 className="fw-bold">
-              Seleccion de personal
+              Selección de personal
             </h4>
           </div>
 
@@ -44,7 +44,7 @@ const Servicios = () => {
               animate={controls}
               className="d-flex gap-3">
               <span > <BiRightArrow /></span>
-              <p>
+              <p className="p1">
                 En <span className="fw-bold selectionWord">WO Talent </span>brindamos el servicio de búsqueda y selección de personal para todo tipo de perfiles.
               </p>
             </motion.div>
@@ -53,8 +53,8 @@ const Servicios = () => {
               animate={controls}
               className="d-flex gap-3">
               <span > <BiRightArrow /></span>
-              <p>
-              Nuestro objetivo es encontrar al candidato perfecto que se ajuste a la búsqueda y a la cultura de tu empresa para lograr resultados exitosos.
+              <p className="p2">
+              Nuestro objetivo es encontrar al candidato perfecto que se ajuste a la búsqueda y a la cultura de <br/> tu empresa para lograr resultados exitosos.
               </p>
             </motion.div>
             <motion.div
@@ -62,8 +62,8 @@ const Servicios = () => {
               animate={controls}
               className="d-flex gap-3">
               <span > <BiRightArrow /></span>
-              <p>
-                Nuestro equipo de expertos se especializa en diferentes áreas para comprender las necesidades específicas de cada cliente.
+              <p className="p3">
+                Nuestro equipo de expertos se especializa en diferentes áreas para comprender las necesidades <br/> específicas de cada cliente.
               </p>
             </motion.div>
             <motion.div
@@ -71,7 +71,7 @@ const Servicios = () => {
               animate={controls}
               className="d-flex gap-3">
               <span > <BiRightArrow /></span>
-              <p>Nos caracterizamos por ser estratégicos y eficientes utilizando métodos efectivos de selección.
+              <p className="p4">Nos caracterizamos por ser estratégicos y eficientes utilizando métodos efectivos de selección.
 
               </p>
             </motion.div>

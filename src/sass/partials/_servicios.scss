@@ -23,12 +23,31 @@
             .selectionDiv {
 
                 div {
+
                     p {
+
+
                         .selectionWord {
                             color: $color-first;
                         }
                     }
 
+
+                    .p1 {
+                        word-spacing: 1px;
+                    }
+
+                    .p2 {
+                        word-spacing: 2px;
+                    }
+
+                    .p3 {
+                        word-spacing: 2.3px;
+                    }
+
+                    .p4 {
+                        word-spacing: 3.2px;
+                    }
                 }
 
 

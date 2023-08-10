@@ -26,7 +26,7 @@ const BusquedaDetail = () => {
 
     return (
         <section className="busquedaDetalleSection container">
-            <h1 className="fw-bold titleBusquedasDetalle my-3">Detalle de busqueda</h1>
+            <h1 className="fw-bold titleBusquedasDetalle my-3">Detalle de búsqueda</h1>
             <div className="line"></div>
             <div className="itemsCont d-flex flex-column gap-3">
                 <article>
@@ -36,7 +36,7 @@ const BusquedaDetail = () => {
                     <p className="busquedaDetalleDescripcionText">{busqueda.descripcion}</p>
                 </article>
             </div>
-            <Link to="/busquedas"> <button className="buttonBusquedaDetalle fw-bold"> Volver a busquedas </button> </Link>
+            <Link to="/busquedas"> <button className="buttonBusquedaDetalle fw-bold"> Volver a búsquedas </button> </Link>
         </section>
     )
 }

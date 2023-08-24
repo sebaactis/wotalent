@@ -10,7 +10,7 @@
     .imgDiv {
 
         min-width: 100%;
-        height: 34rem;
+        height: 29rem;
         background-image: url("/src/assets/images/mainImagen.jpg");
         background-color: $color-third;
         background-blend-mode: multiply;
@@ -49,16 +49,5 @@
         .btnConocenos:hover {
             background-color: $color-second;
         }
-    }
-
-    .imgDiv2 {
-        min-width: 100%;
-        height: 35rem;
-        background-image: url("/src/assets/images/imagen2.jpg");
-        background-color: $color-third; 
-        background-blend-mode: multiply;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
     }
 }

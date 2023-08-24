@@ -14,7 +14,7 @@ const NavBarItems = ({ isInFooter }) => {
     },
 
     {
-      title: 'Quiénes Somos',
+      title: 'Quiénes somos',
       url: '/quienes-somos'
     },
 

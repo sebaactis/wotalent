@@ -1,5 +1,7 @@
 .quienesSomosMain {
 
+    margin-bottom: 9rem;
+
     .titleQuienes {
         color: $color-first;
     }
@@ -9,6 +11,26 @@
         margin: 2rem 0;
         
     }
+
+    .imgDiv3 {
+        min-width: 100%;
+        height: 35rem;
+        background-image: url("/src/assets/images/imagen3.jpg");
+        background-color: $color-third; 
+        background-blend-mode: multiply;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2.5rem;
+
+        h1 {
+            color: white;
+            
+        }
+    } 
 
     .graficosQuienesSomos {
         display: flex;

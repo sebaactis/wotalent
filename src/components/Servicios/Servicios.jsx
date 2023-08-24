@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react'
-import { RiUserSearchLine } from 'react-icons/ri'
-import { BsFileEarmarkMedical } from 'react-icons/bs'
+/* import { RiUserSearchLine } from 'react-icons/ri'
+import { BsFileEarmarkMedical } from 'react-icons/bs' */
 import { BiRightArrow } from 'react-icons/bi'
 import { useAnimation, motion } from 'framer-motion'
 
@@ -29,10 +29,13 @@ const Servicios = () => {
       <div className="services my-2 d-flex flex-column gap-4">
         <article className="d-flex flex-column gap-4">
           <div className="d-flex gap-3 subTitleDiv">
-            <span> <RiUserSearchLine className="fs-4 servicesIcon" /> </span>
+            {/* <span> <RiUserSearchLine className="fs-4 servicesIcon" /> </span>
             <h4 className="fw-bold">
               Selección de personal
-            </h4>
+            </h4> */}
+            <div className="imgDiv3">
+              <h1 className="text-center fw-bold"> Selección de personal</h1>
+            </div>
           </div>
 
           <div className="selectionDiv fs-5 d-flex flex-column gap-3 mx-2">
@@ -42,7 +45,7 @@ const Servicios = () => {
               className="d-flex gap-3">
               <span > <BiRightArrow /></span>
               <p className="p1">
-                En <span className="fw-bold selectionWord">WO Talent </span>brindamos el servicio de búsqueda y selección de personal para todo tipo de perfiles.
+                En <span className="fw-bold selectionWord">WO Talent </span>brindamos el servicio de búsqueda y selección de personal.
               </p>
             </motion.div>
             <motion.div
@@ -78,10 +81,13 @@ const Servicios = () => {
         </article>
         <article>
           <div className="d-flex gap-3 subTitleDiv ">
-            <span> <BsFileEarmarkMedical className="fs-4 servicesIcon" /> </span>
-            <h4 className="fw-bold">
+            {/* <span> <BsFileEarmarkMedical className="fs-4 servicesIcon" /> </span> */}
+            {/* <h4 className="fw-bold">
               Examenes psicotécnicos
-            </h4>
+            </h4> */}
+            <div className="imgDiv2">
+              <h1 className="text-center fw-bold"> Examenes psicotécnicos</h1>
+            </div>
           </div>
 
           <motion.p initial={{ x: -100, opacity: 0 }}

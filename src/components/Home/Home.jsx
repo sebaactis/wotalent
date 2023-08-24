@@ -25,16 +25,22 @@ const Home = () => {
         </div>
 
         <motion.div
-        initial={{ opacity: 0, y: -100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ delay: 2, duration: 0.5 }}
+          initial={{ opacity: 0, y: -100 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ delay: 2, duration: 0.5 }}
         >
-        <Link to="/quienes-somos"> <button className="btnConocenos">Conocenos</button> </Link>
+          <Link to="/quienes-somos"> <button className="btnConocenos">Conocenos</button> </Link>
         </motion.div>
       </div>
       <div>
         <img src={proceso} width={500} height={500} />
       </div>
+      {/* <div className="imgDiv2">
+
+      </div>
+      <div>
+        <img src={proceso} width={500} height={500} />
+      </div> */}
     </main>
   )
 }

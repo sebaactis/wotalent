@@ -38,7 +38,7 @@
 
         .btnConocenos {
             background-color: $color-first;
-            padding: 0.6rem 1rem;
+            padding: 0.8rem 1.2rem;
             color: white;
             font-weight: bold;
             border-radius: 10px;
@@ -48,6 +48,51 @@
 
         .btnConocenos:hover {
             background-color: $color-second;
+        }
+    }
+
+    .homeProcess {
+        padding-bottom: 8rem;
+        display: grid;
+        align-items: center;
+        justify-items: center;
+        gap: 2rem;
+
+        .firstRow {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .secondRow {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+        }
+
+        .cardHome {
+            box-shadow: 0 0 33px -10px #7fafca;
+            border-radius: 11px;
+            width: 18rem;
+            height: 14rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            align-items: start;
+            gap: 1rem;
+
+            p {
+                text-align: start;
+                margin-left: 1rem;
+                padding-top: 0.3rem;
+                font-size: 1.05rem;
+                width: 90%;
+            }
+
+            img {
+                margin-left: 1rem;
+                padding-top: 1rem;
+            }
         }
     }
 }

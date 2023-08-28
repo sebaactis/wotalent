@@ -1,8 +1,6 @@
 .quienesSomosMain {
 
-    .titleQuienes {
-        color: $color-first;
-    }
+    
 
     .line {
         border-bottom: 1px solid rgb(117, 113, 113);
@@ -12,15 +10,26 @@
 
     .imgQuienes {
         min-width: 100%;
-        height: 33rem;
+        width: 100%;
+        height: 30rem;
         background-image: url("/src/assets/images/quienes.png");
+        background-color: rgba(17, 0, 0, 0.445);
+        background-blend-mode: multiply;
         background-size: cover;
         background-position: center;
+
+        .titleQuienes {
+            color: white;
+            font-weight: bold;
+            margin-left: 7rem;
+            padding-top: 4rem;
+        }
     }
 
     .graficosQuienesSomos {
         display: flex;
         margin-top: 6rem;
+        margin-bottom: 5rem;
         gap: 3rem;
 
         .graficoArticle {
@@ -30,8 +39,6 @@
             align-items: center;
             gap: 1rem;
             
-            
-    
     
             .descGrafico {
                 text-align: center;

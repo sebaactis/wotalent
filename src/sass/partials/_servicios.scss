@@ -40,15 +40,14 @@
 
             .selectionDiv {
 
-                max-width: 80%;
+                max-width: 100%;
                 padding: 4rem 0;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                
+                justify-items: center;  
+                align-items: center;
                 gap: 2rem;
-                margin-left: 9rem;
-                
-                
+
 
                 div {
                     border-top: 2px solid $color-first;

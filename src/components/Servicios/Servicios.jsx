@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react'
 /* import { BiRightArrow } from 'react-icons/bi' */
-import { FiChevronsRight, FiChevronsLeft } from 'react-icons/fi'
 import { useAnimation, motion } from 'framer-motion'
 
 const Servicios = () => {
@@ -11,7 +10,7 @@ const Servicios = () => {
       controls.start(() => ({
         x: 0,
         opacity: 1,
-        transition: { delay: 1.5, duration: 0.6 }
+        transition: { delay: 1, duration: 0.4 }
       }))
     }, [controls])
 
@@ -38,11 +37,7 @@ const Servicios = () => {
           </div>
 
           <div className="selectionDiv fs-5">
-            <motion.section
-              initial={{ x: -100, opacity: 0 }}
-              animate={controls}
-              className="d-flex justify-content-center align-items-center gap-5">
-              <FiChevronsRight className="fs-1 m-5" color="#DF2B5C" />
+
               <motion.div
                 initial={{ x: -100, opacity: 0 }}
                 animate={controls}
@@ -53,13 +48,7 @@ const Servicios = () => {
                   En <span className="fw-bold selectionWord">WO Talent </span>brindamos el servicio de búsqueda y selección de personal
                 </p>
               </motion.div>
-              <FiChevronsLeft className="fs-1 m-5" color="#DF2B5C" />
-            </motion.section>
-            <motion.section
-              initial={{ x: -100, opacity: 0 }}
-              animate={controls}
-              className="d-flex justify-content-center align-items-center gap-5">
-              <FiChevronsRight className="fs-1 m-5" color="#DF2B5C" />
+
               <motion.div
                 initial={{ x: -100, opacity: 0 }}
                 animate={controls}
@@ -69,13 +58,7 @@ const Servicios = () => {
                   Nuestro objetivo es encontrar al candidato perfecto que se ajuste a la búsqueda y a la cultura de <br /> tu empresa para lograr resultados exitosos.
                 </p>
               </motion.div>
-              <FiChevronsLeft className="fs-1 m-5" color="#DF2B5C" />
-            </motion.section>
-            <motion.section
-              initial={{ x: -100, opacity: 0 }}
-              animate={controls}
-              className="d-flex justify-content-center align-items-center gap-5">
-                <FiChevronsRight className="fs-1 m-5" color="#DF2B5C" />
+
               <motion.div
                 initial={{ x: 100, opacity: 0 }}
                 animate={controls}
@@ -85,13 +68,7 @@ const Servicios = () => {
                   Nuestro equipo de expertos se especializa en diferentes áreas para comprender las necesidades <br /> específicas de cada cliente.
                 </p>
               </motion.div>
-              <FiChevronsLeft className="fs-1 m-5" color="#DF2B5C" />
-            </motion.section>
-            <motion.section
-              initial={{ x: -100, opacity: 0 }}
-              animate={controls}
-              className="d-flex justify-content-center align-items-center gap-5">
-                <FiChevronsRight className="fs-1 m-5" color="#DF2B5C" />
+
             <motion.div
               initial={{ x: 100, opacity: 0 }}
               animate={controls}
@@ -101,8 +78,6 @@ const Servicios = () => {
 
               </p>
             </motion.div>
-            <FiChevronsLeft className="fs-1 m-5" color="#DF2B5C" />
-            </motion.section>
 
           </div>
 

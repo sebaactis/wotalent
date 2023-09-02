@@ -47,7 +47,7 @@ const Footer = () => {
         </section>
 
         <section className="mailSection col-lg-4 gap-3 d-flex flex-column justify-content-center">
-          <article className="infoDivFooter d-flex gap-3 justify-content-center align-items-start">
+          <article className="infoDivFooter d-flex gap-2 justify-content-center align-items-start">
             <AiOutlineMail className="mailIcon" />
             <h3 className="fs-6">
               Contacto: <span className="mx-1 fw-bold"> info@wotalent.com.ar </span>
@@ -55,7 +55,7 @@ const Footer = () => {
 
           </article>
 
-          <article className="seleccionDivFooter d-flex gap-3 justify-content-center align-items-start">
+          <article className="seleccionDivFooter d-flex gap-2 justify-content-center align-items-start">
             <AiOutlineMail className="mailIcon" />
             <h3 className="fs-6">
               Enviá tu CV:<span className="mx-2 fw-bold"> seleccion@wotalent.com.ar </span>

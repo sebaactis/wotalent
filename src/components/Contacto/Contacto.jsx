@@ -7,15 +7,14 @@ import { IoPeople } from 'react-icons/io5'
 import Swal from 'sweetalert2'
 
 const Contacto = () => {
-  const [nombre, setNombre] = useState('')
+  const [nombreApellido, setNombreApellido] = useState('')
   const [apellido, setApellido] = useState('')
   const [empresa, setEmpresa] = useState('')
   const [telefono, setTelefono] = useState('')
   const [email, setEmail] = useState('')
   const [consulta, setConsulta] = useState('')
 
-  const handleName = (e) => setNombre(e.target.value)
-  const handleApellido = (e) => setApellido(e.target.value)
+  const handleName = (e) => setNombreApellido(e.target.value)
   const handleEmpresa = (e) => setEmpresa(e.target.value)
   const handleTelefono = (e) => setTelefono(e.target.value)
   const handleEmail = (e) => setEmail(e.target.value)
@@ -25,7 +24,7 @@ const Contacto = () => {
     e.preventDefault()
 
     const objConsulta = {
-      nombre,
+      nombreApellido,
       apellido,
       empresa,
       telefono,
@@ -42,7 +41,7 @@ const Contacto = () => {
       .then(data => console.log(data))
       .catch(err => console.log(err))
 
-    setNombre('')
+    setNombreApellido('')
     setApellido('')
     setEmpresa('')
     setTelefono('')
@@ -71,16 +70,8 @@ const Contacto = () => {
 
           <div className="formDiv">
 
-            <label htmlFor="name">Nombre</label>
-            <input onChange={handleName} value={nombre} required="required" type="text" name="apellido">
-            </input>
-
-          </div>
-
-          <div className="formDiv">
-
-            <label htmlFor="apellido">Apellido</label>
-            <input onChange={handleApellido} value={apellido} type="text" name="apellido">
+            <label htmlFor="name">Nombre y Apellido <span className="astObg">*</span></label>
+            <input onChange={handleName} value={nombreApellido} required="required" type="text" name="apellido">
             </input>
 
           </div>
@@ -100,18 +91,19 @@ const Contacto = () => {
           </div>
           <div className="formDiv">
 
-            <label htmlFor="email">Email</label>
+            <label htmlFor="email">Email <span className="astObg">*</span></label>
             <input onChange={handleEmail} value={email} type="email" name="email">
             </input>
           </div>
 
           <div className="formDiv">
-            <label htmlFor="consulta">Consulta</label>
+            <label htmlFor="consulta">Consulta <span className="astObg">*</span> </label>
             <textarea className="fw-bold" onChange={handleConsulta} value={consulta} cols="60" name="consulta"></textarea>
 
           </div>
-
+          <p className="camposObligatorios"> <span>*</span> Campos Obligatorios</p>
           <button className="buttonContacto"> Enviar </button>
+
         </form>
 
         <div className="col-lg-5 contactoCv">

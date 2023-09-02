@@ -38,6 +38,8 @@ const Servicios = () => {
 
           <div className="selectionDiv fs-5">
 
+            <section className="selectionSection1">
+
               <motion.div
                 initial={{ x: -100, opacity: 0 }}
                 animate={controls}
@@ -59,6 +61,10 @@ const Servicios = () => {
                 </p>
               </motion.div>
 
+            </section>
+
+            <section className="selectionSection2">
+
               <motion.div
                 initial={{ x: 100, opacity: 0 }}
                 animate={controls}
@@ -69,15 +75,17 @@ const Servicios = () => {
                 </p>
               </motion.div>
 
-            <motion.div
-              initial={{ x: 100, opacity: 0 }}
-              animate={controls}
-              className="d-flex gap-3">
-              {/* <span > <BiRightArrow /></span> */}
-              <p className="p4">Nos caracterizamos por ser estratégicos y eficientes utilizando métodos efectivos de selección.
+              <motion.div
+                initial={{ x: 100, opacity: 0 }}
+                animate={controls}
+                className="d-flex gap-3">
+                {/* <span > <BiRightArrow /></span> */}
+                <p className="p4">Nos caracterizamos por ser estratégicos y eficientes utilizando métodos efectivos de selección.
 
-              </p>
-            </motion.div>
+                </p>
+              </motion.div>
+
+            </section>
 
           </div>
 

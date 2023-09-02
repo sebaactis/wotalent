@@ -4,14 +4,14 @@ import { motion } from 'framer-motion'
 import CardHome from './CardHome'
 import atraccion from '../../assets/images/atraccion.png'
 import definicion from '../../assets/images/definicion.png'
-import entrevistaCliente from '../../assets/images/entrevistaClientes.png'
-import entrevistaSector from '../../assets/images/entrevistaSector.png'
 import estrategia from '../../assets/images/estrategia.png'
-import preseleccionTalento from '../../assets/images/preseleccionTalento.png'
-import seguimiento from '../../assets/images/seguimiento.png'
 import { useInView } from 'react-intersection-observer'
 
 const Home = () => {
+  const texto1 = 'Creamos una estrategia de búsqueda <strong> personalizada </strong> para encontrar a los mejores candidatos que se ajusten a tu perfil'
+  const texto2 = 'Atraemos <strong> talento de alto nivel </strong> utilizando diversas fuentes y técnicas de reclutamiento para atraer a los mejores profesionales'
+  const texto3 = 'Manteniendo un <strong> seguimiento cercano </strong> y proporcionando feedback continuo, garantizamos una colaboración exitosa a largo plazo.'
+
   const [ref, inView] = useInView({ triggerOnce: true })
 
   const fadeInAnimation = {
@@ -48,6 +48,7 @@ const Home = () => {
         </motion.div>
       </div>
       <div className="homeProcess">
+      <h2 className="fw-bold">Ventajas Competitivas</h2>
         <motion.div
         ref={ref}
         initial='hidden'
@@ -55,22 +56,9 @@ const Home = () => {
         transition={{ delay: 0.5, duration: 0.4 }}
         variants={fadeInAnimation}
         className="firstRow">
-          <CardHome imagen={definicion} texto={'Definimos el perfil ideal para tu empresa, identificando las habilidades y cualidades necesarias'} />
-          <CardHome imagen={estrategia} texto={'Creamos una estrategia de búsqueda personalizada para encontrar a los mejores candidatos que se ajusten a tu perfil'} />
-          <CardHome imagen={atraccion} texto={'Atraemos talento de alto nivel utilizando diversas fuentes y técnicas de reclutamiento para atraer a los mejores profesionales'} />
-        </motion.div>
-        <motion.div
-        ref={ref}
-        initial='hidden'
-        animate={inView ? 'visible' : 'hidden'}
-        transition={{ delay: 0.9, duration: 0.4 }}
-        variants={fadeInAnimation}
-        className="secondRow">
-          <CardHome imagen={preseleccionTalento} texto={'Realizamos una minuciosa preselección de candidatos, evaluando sus habilidades y experiencia.'} />
-          <CardHome imagen={entrevistaSector} texto={'Evaluamos a los candidatos para garantizar su idoneidad y alinearlos con tus necesidades'} />
-          <CardHome imagen={entrevistaCliente} texto={'Facilitamos entrevistas entre clientes y candidatos, asegurando una comunicación efectiva.'} />
-          <CardHome imagen={seguimiento} texto={'Manteniendo un seguimiento cercano y proporcionando feedback continuo, garantizamos una colaboración exitosa a largo plazo'} />
-
+          <CardHome titulo={'Estrategia de búsqueda'} imagen={estrategia} texto={texto1} />
+          <CardHome titulo={'Atracción del talento'} imagen={atraccion} texto={texto2} />
+          <CardHome titulo={'Seguimiento y feedback'} imagen={definicion} texto={texto3} />
         </motion.div>
 
       </div>

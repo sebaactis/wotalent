@@ -17,7 +17,7 @@
         .form {
             display: flex;
             flex-direction: column;
-            gap: 2rem;
+            gap: 1rem;
 
             .titleDiv {
                 display: flex;
@@ -46,6 +46,10 @@
                 label {
                     font-weight: bold;
                     font-size: 1.1rem;
+
+                    .astObg {
+                        color: $color-first;
+                    }
                 }
 
                 input {
@@ -62,6 +66,15 @@
                     width: 80%;
                     height: 18rem;
                     resize: none;
+                }
+            }
+
+            .camposObligatorios {
+                font-size: 1rem;
+                font-weight: bold;
+
+                span {
+                    color: $color-first;
                 }
             }
 

@@ -77,6 +77,12 @@ const Contacto = () => {
           </div>
           <div className="formDiv">
 
+            <label htmlFor="email">Email <span className="astObg">*</span></label>
+            <input onChange={handleEmail} value={email} type="email" name="email">
+            </input>
+          </div>
+          <div className="formDiv">
+
             <label htmlFor="empresa">Empresa</label>
             <input onChange={handleEmpresa} value={empresa} type="text" name="empresa">
             </input>
@@ -84,17 +90,12 @@ const Contacto = () => {
           </div>
           <div className="formDiv">
 
-            <label htmlFor="telefono">Telefono</label>
+            <label htmlFor="telefono">Teléfono</label>
             <input onChange={handleTelefono} value={telefono} type="tel" name="telefono">
             </input>
 
           </div>
-          <div className="formDiv">
 
-            <label htmlFor="email">Email <span className="astObg">*</span></label>
-            <input onChange={handleEmail} value={email} type="email" name="email">
-            </input>
-          </div>
 
           <div className="formDiv">
             <label htmlFor="consulta">Consulta <span className="astObg">*</span> </label>

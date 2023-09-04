@@ -8,8 +8,8 @@ import estrategia from '../../assets/images/estrategia.png'
 import { useInView } from 'react-intersection-observer'
 
 const Home = () => {
-  const texto1 = 'Creamos una estrategia de búsqueda <strong> personalizada </strong> para encontrar a los mejores candidatos que se ajusten a tu perfil'
-  const texto2 = 'Atraemos <strong> talento de alto nivel </strong> utilizando diversas fuentes y técnicas de reclutamiento para atraer a los mejores profesionales'
+  const texto1 = 'Creamos una estrategia de búsqueda <strong> personalizada </strong> para encontrar a los mejores candidatos que se ajusten a tu perfil.'
+  const texto2 = 'Atraemos <strong> talento de alto nivel </strong> utilizando diversas fuentes y técnicas de reclutamiento para atraer a los mejores profesionales.'
   const texto3 = 'Manteniendo un <strong> seguimiento cercano </strong> y proporcionando feedback continuo, garantizamos una colaboración exitosa a largo plazo.'
 
   const [ref, inView] = useInView({ triggerOnce: true })

@@ -47,7 +47,7 @@ const Servicios = () => {
 
                 <p className="p1">
                   {/*  <span > <BiRightArrow /></span> */}
-                  En <span className="fw-bold selectionWord">WO Talent </span>brindamos el servicio de búsqueda y selección de personal
+                  En <span className="fw-bold selectionWord">WO Talent </span>brindamos el servicio de búsqueda y selección de personal adecuado para tu empresa.
                 </p>
               </motion.div>
 
@@ -57,7 +57,7 @@ const Servicios = () => {
                 className="d-flex gap-3">
                 {/* <span > <BiRightArrow /></span> */}
                 <p className="p2">
-                  Nuestro objetivo es encontrar al candidato perfecto que se ajuste a la búsqueda y a la cultura de <br /> tu empresa para lograr resultados exitosos.
+                  Nuestro objetivo es encontrar al candidato perfecto que se ajuste a la búsqueda y  a la cultura de  tu empresa para lograr resultados exitosos.
                 </p>
               </motion.div>
 
@@ -71,7 +71,7 @@ const Servicios = () => {
                 className="d-flex gap-3">
                 {/* <span > <BiRightArrow /></span> */}
                 <p className="p3">
-                  Nuestro equipo de expertos se especializa en diferentes áreas para comprender las necesidades <br /> específicas de cada cliente.
+                  Nuestro equipo se especializa en diferentes áreas para comprender las necesidades específicas de cada cliente.
                 </p>
               </motion.div>
 
@@ -80,7 +80,7 @@ const Servicios = () => {
                 animate={controls}
                 className="d-flex gap-3">
                 {/* <span > <BiRightArrow /></span> */}
-                <p className="p4">Nos caracterizamos por ser estratégicos y eficientes utilizando métodos efectivos de selección.
+                <p className="p4">Nos destacamos por ser estratégicos y eficientes, empleando métodos efectivos de selección de personal altamente calificado.
 
                 </p>
               </motion.div>

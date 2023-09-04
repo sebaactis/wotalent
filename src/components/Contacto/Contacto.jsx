@@ -96,7 +96,6 @@ const Contacto = () => {
 
           </div>
 
-
           <div className="formDiv">
             <label htmlFor="consulta">Consulta <span className="astObg">*</span> </label>
             <textarea className="fw-bold" onChange={handleConsulta} value={consulta} cols="60" name="consulta"></textarea>

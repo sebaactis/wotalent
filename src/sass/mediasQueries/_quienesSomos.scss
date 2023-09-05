@@ -1,12 +1,28 @@
-@media (width <= 768px) {
+@media (width <=768px) {
     .quienesSomosMain {
-        
+
         padding-bottom: 0;
-    
+
+        .imgQuienes {
+            height: 13rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+
+            .titleQuienes {
+                font-weight: bold;
+                margin-left: 0rem;
+                padding-top: 2rem;
+                text-align: center;
+
+                font-size: 2rem;
+            }
+        }
+
         .graficosQuienesSomos {
             flex-direction: column;
-    
+
         }
     }
 }
-

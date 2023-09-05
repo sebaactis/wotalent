@@ -1,0 +1,53 @@
+@media (width <=768px) {
+
+    .serviciosSection {
+
+        .services {
+            article {
+                .subTitleDiv {
+
+                    .imgSeleccion {
+                        height: 13rem;
+                        width: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: start;
+
+                        .titleSeleccion {
+                            font-weight: bold;
+                            margin-left: 0rem;
+                            font-size: 2rem;
+                        }
+                    }
+                }
+
+
+                .selectionDiv {
+
+                    flex-direction: column;
+                    gap: 0rem;
+
+
+                    div {
+                        margin: 0rem;
+                        margin-top: 1.5rem;
+                    }
+                }
+            }
+        }
+
+        .imgExamenes {
+            height: 13rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: start;
+
+            .examenesTitle {
+                font-weight: bold;
+                padding-top: 1rem;
+            }
+        }
+    }
+
+}

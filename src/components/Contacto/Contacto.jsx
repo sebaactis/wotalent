@@ -62,7 +62,7 @@ const Contacto = () => {
       <div className="line"></div>
       <article className="row">
 
-        <form onSubmit={enviarConsulta} className="form col-lg-7">
+        <form onSubmit={enviarConsulta} className="form col-lg-7 col-xs-12">
           <div className="titleDiv">
             <AiOutlineQuestionCircle className="contactIcon" />
             <h3 className="titleContact">Hacenos tu consulta</h3>
@@ -106,7 +106,7 @@ const Contacto = () => {
 
         </form>
 
-        <div className="col-lg-5 contactoCv">
+        <div className="col-lg-5 col-xs-12 contactoCv">
           <div className="mailTextContacto">
             <RiMailSendLine className="contactoCvIcon" />
             <h2 className="titleContactoCv">Envianos tu CV <span className="fw-bold">seleccion@wotalent.com.ar</span></h2>

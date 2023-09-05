@@ -16,6 +16,11 @@
                 display: grid;
                 grid-template-columns: 1fr;
                 gap: 3rem;
+
+                .cardHome {
+                    height: 15rem;
+                    width: 20rem;
+                }
             }
     
             

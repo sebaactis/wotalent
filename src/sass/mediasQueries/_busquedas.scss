@@ -2,6 +2,20 @@
 
     .busquedasSection {
 
+        .noBusquedasFlex {
+
+            .noBusquedas {
+
+                width: 21rem;
+
+    
+                p {
+                    font-size: 1rem;
+
+                }
+            }
+        }
+
         .busquedasItems {
             grid-template-columns: 1fr;
             justify-items: center;
@@ -17,6 +31,7 @@
                     }
                 }
             }
+
         }
 
         .busquedasTexts {

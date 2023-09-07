@@ -2,7 +2,6 @@
 import NavBarItems from '../NavBar/NavBarItems'
 import logo2 from '../../assets/images/wologo2.png'
 import { AiOutlineMail } from 'react-icons/ai'
-import { Link } from 'react-router-dom'
 import Swal from 'sweetalert2'
 import { useContext } from 'react'
 import { SessionContext } from '../../context/SessionContext'

@@ -8,7 +8,6 @@ import Swal from 'sweetalert2'
 
 const Contacto = () => {
   const [nombreApellido, setNombreApellido] = useState('')
-  const [apellido, setApellido] = useState('')
   const [empresa, setEmpresa] = useState('')
   const [telefono, setTelefono] = useState('')
   const [email, setEmail] = useState('')
@@ -25,7 +24,6 @@ const Contacto = () => {
 
     const objConsulta = {
       nombreApellido,
-      apellido,
       empresa,
       telefono,
       email,
@@ -42,7 +40,6 @@ const Contacto = () => {
       .catch(err => console.log(err))
 
     setNombreApellido('')
-    setApellido('')
     setEmpresa('')
     setTelefono('')
     setEmail('')

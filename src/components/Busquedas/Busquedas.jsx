@@ -45,7 +45,25 @@ const Busquedas = () => {
     )
   }
 
-  if (busquedas.length <= 0) {
+  if (busquedas.length > 0) {
+    return (
+      <section className="busquedasSection container">
+        <h1 className="fw-bold titleBusquedas my-3">Búsquedas</h1>
+        <div className="line"></div>
+        <div className="busquedasTexts">
+          <h3 className="fs-1"> Estás a un paso de tu próxima oportunidad </h3>
+          <p className="fs-1">¡Sigamos impulsando el <span className="talentWord fw-bold">talento!</span></p>
+        </div>
+        <div className="busquedasItems">
+          {busquedas.map((busqueda) => {
+            return (
+              <CardItem key={busqueda._id} busqueda={busqueda} />
+            )
+          })}
+        </div>
+      </section>
+    )
+  } else {
     return (
       <section className="busquedasSection container">
         <h1 className="fw-bold titleBusquedas my-3">Búsquedas</h1>
@@ -64,24 +82,6 @@ const Busquedas = () => {
       </section>
     )
   }
-
-  return (
-    <section className="busquedasSection container">
-      <h1 className="fw-bold titleBusquedas my-3">Búsquedas</h1>
-      <div className="line"></div>
-      <div className="busquedasTexts">
-        <h3 className="fs-1"> Estás a un paso de tu próxima oportunidad </h3>
-        <p className="fs-1">¡Sigamos impulsando el <span className="talentWord fw-bold">talento!</span></p>
-      </div>
-      <div className="busquedasItems">
-        {busquedas.map((busqueda) => {
-          return (
-            <CardItem key={busqueda._id} busqueda={busqueda} />
-          )
-        })}
-      </div>
-    </section>
-  )
 }
 
 export default Busquedas

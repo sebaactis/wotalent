@@ -1,28 +1,26 @@
-import './App.css'
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import '../src/sass/main.scss';
-import Home from './components/Home/Home';
-import QuienesSomos from './components/QuienesSomos/QuienesSomos';
-import Servicios from './components/Servicios/Servicios';
-import Contacto from './components/Contacto/Contacto';
-import Busquedas from './components/Busquedas/Busquedas';
-import NavBar from './components/NavBar/NavBar';
-import Footer from './components/Footer/Footer';
-import PanelBusquedas from './components/PanelBusquedas/PanelBusquedas';
-import BusquedaDetail from './components/Busquedas/BusquedaDetail';
-import Login from './components/Login/Login';
-import { useContext, useEffect } from 'react';
-import { SessionContext } from './context/SessionContext';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom'
+import '../src/sass/main.scss'
+import Home from './components/Home/Home'
+import QuienesSomos from './components/QuienesSomos/QuienesSomos'
+import Servicios from './components/Servicios/Servicios'
+import Contacto from './components/Contacto/Contacto'
+import Busquedas from './components/Busquedas/Busquedas'
+import NavBar from './components/NavBar/NavBar'
+import Footer from './components/Footer/Footer'
+import PanelBusquedas from './components/PanelBusquedas/PanelBusquedas'
+import BusquedaDetail from './components/Busquedas/BusquedaDetail'
+import Login from './components/Login/Login'
+import { useContext, useEffect } from 'react'
+import { SessionContext } from './context/SessionContext'
 
-function App() {
-
-  const { accessToken, setAccessToken } = useContext(SessionContext);
+function App () {
+  const { accessToken, setAccessToken } = useContext(SessionContext)
 
   useEffect(() => {
-    const token = localStorage.getItem('accessToken');
+    const token = localStorage.getItem('accessToken')
 
     if (token) {
-      setAccessToken(true);
+      setAccessToken(true)
     }
   }, [accessToken])
 

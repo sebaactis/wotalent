@@ -1,5 +1,4 @@
-import React, { useEffect } from 'react'
-/* import { BiRightArrow } from 'react-icons/bi' */
+import { useEffect } from 'react'
 import { useAnimation, motion } from 'framer-motion'
 
 const Servicios = () => {
@@ -21,16 +20,9 @@ const Servicios = () => {
 
   return (
     <section className="serviciosSection">
-      {/* <h1 className="fw-bold titleServicios my-3">Servicios</h1> */}
-      {/* <div className="line"></div> */}
-
       <div className="services my-2 d-flex flex-column gap-4">
         <article className="d-flex flex-column gap-4">
           <div className="d-flex gap-3 subTitleDiv">
-            {/* <span> <RiUserSearchLine className="fs-4 servicesIcon" /> </span> */}
-            {/* <h4 className="fw-bold">
-              Selección de personal
-            </h4> */}
             <div className="imgSeleccion">
               <h1 className="titleSeleccion"> Selección de personal </h1>
             </div>
@@ -46,7 +38,6 @@ const Servicios = () => {
                 className="d-flex gap-3">
 
                 <p className="p1">
-                  {/*  <span > <BiRightArrow /></span> */}
                   En <span className="fw-bold selectionWord">WO Talent </span>brindamos el servicio de búsqueda y selección de personal adecuado para tu empresa.
                 </p>
               </motion.div>
@@ -55,7 +46,6 @@ const Servicios = () => {
                 initial={{ x: -100, opacity: 0 }}
                 animate={controls}
                 className="d-flex gap-3">
-                {/* <span > <BiRightArrow /></span> */}
                 <p className="p2">
                   Nuestro objetivo es encontrar al candidato perfecto que se ajuste a la búsqueda y  a la cultura de  tu empresa para lograr resultados exitosos.
                 </p>
@@ -69,7 +59,6 @@ const Servicios = () => {
                 initial={{ x: 100, opacity: 0 }}
                 animate={controls}
                 className="d-flex gap-3">
-                {/* <span > <BiRightArrow /></span> */}
                 <p className="p3">
                   Nuestro equipo se especializa en diferentes áreas para comprender las necesidades específicas de cada cliente.
                 </p>
@@ -79,7 +68,6 @@ const Servicios = () => {
                 initial={{ x: 100, opacity: 0 }}
                 animate={controls}
                 className="d-flex gap-3">
-                {/* <span > <BiRightArrow /></span> */}
                 <p className="p4">Nos destacamos por ser estratégicos y eficientes, empleando métodos efectivos de selección de personal altamente calificado.
 
                 </p>
@@ -92,10 +80,6 @@ const Servicios = () => {
         </article>
         <article>
           <div className="d-flex gap-3 subTitleDiv">
-            {/* <span> <BsFileEarmarkMedical className="fs-4 servicesIcon" /> </span>
-            <h4 className="fw-bold">
-              Examenes psicotécnicos
-            </h4> */}
             <div className="imgExamenes">
               <h1 className="examenesTitle">Exámenes Psicotécnicos</h1>
             </div>

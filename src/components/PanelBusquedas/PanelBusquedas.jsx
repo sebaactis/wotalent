@@ -66,40 +66,40 @@ const PanelBusquedas = () => {
   }
 
   return (
-        <section className="panelSection container">
-            <h1 className="fw-bold titlePanel my-3">Panel</h1>
-            <div className="line"></div>
+    <section className="panelSection container">
+      <h1 className="fw-bold titlePanel my-3">Panel</h1>
+      <div className="line"></div>
 
-            <form className="formPanel" onSubmit={handleSubmit}>
-                <div className="formPanelDiv">
-                    <label className="fw-bold fs-5" htmlFor="nombre">Nombre</label>
-                    <input type="text" name="nombre" id="nombre" onChange={(e) => setNombre(e.target.value)} value={nombre} />
-                </div>
+      <form className="formPanel" onSubmit={handleSubmit}>
+        <div className="formPanelDiv">
+          <label className="fw-bold fs-5" htmlFor="nombre">Nombre</label>
+          <input type="text" name="nombre" id="nombre" onChange={(e) => setNombre(e.target.value)} value={nombre} />
+        </div>
 
-                <div className="formPanelDiv">
-                    <label className="fw-bold fs-5" htmlFor="resumen">Resumen</label>
-                    <textarea maxLength={100} name="resumen" id="resumen" onChange={(e) => setResumen(e.target.value)} value={resumen} cols="60" />
-                </div>
+        <div className="formPanelDiv">
+          <label className="fw-bold fs-5" htmlFor="resumen">Resumen</label>
+          <textarea maxLength={100} name="resumen" id="resumen" onChange={(e) => setResumen(e.target.value)} value={resumen} cols="60" />
+        </div>
 
-                <div className="formPanelDiv">
-                    <label className="fw-bold fs-5" htmlFor="descripcion">Descripcion</label>
-                    <textarea name="descripcion" id="descripcion" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} cols="90" />
-                </div>
+        <div className="formPanelDiv">
+          <label className="fw-bold fs-5" htmlFor="descripcion">Descripcion</label>
+          <textarea name="descripcion" id="descripcion" onChange={(e) => setDescripcion(e.target.value)} value={descripcion} cols="90" />
+        </div>
 
-                <div className="formPanelDiv">
-                    <label className="fw-bold fs-5" htmlFor="codigo">Codigo</label>
-                    <input type="text" name="codigo" id="codigo" onChange={(e) => setCodigo(e.target.value)} value={codigo} />
-                </div>
+        <div className="formPanelDiv">
+          <label className="fw-bold fs-5" htmlFor="codigo">Codigo</label>
+          <input type="text" name="codigo" id="codigo" onChange={(e) => setCodigo(e.target.value)} value={codigo} />
+        </div>
 
-                <button className="buttonPanel" disabled={nombre === '' || resumen === '' || descripcion === '' || codigo === ''}> Cargar </button>
+        <button className="buttonPanel" disabled={nombre === '' || resumen === '' || descripcion === '' || codigo === ''}> Cargar </button>
 
-                <label className="fw-bold fs-5" htmlFor="dcodigo">Ingrese un codigo para eliminar una busqueda</label>
-                <input className="inputDelete" type="text" name="dcodigo" id="dcodigo" onChange={(e) => setDcodigo(e.target.value)} value={dcodigo} />
-                <button onClick={handleDelete} className="buttonPanel" disabled={dcodigo === ''}> Eliminar</button>
+        <label className="fw-bold fs-5" htmlFor="dcodigo">Ingrese un codigo para eliminar una busqueda</label>
+        <input className="inputDelete" type="text" name="dcodigo" id="dcodigo" onChange={(e) => setDcodigo(e.target.value)} value={dcodigo} />
+        <button onClick={handleDelete} className="buttonPanel" disabled={dcodigo === ''}> Eliminar</button>
 
-            </form>
+      </form>
 
-        </section>
+    </section>
   )
 }
 

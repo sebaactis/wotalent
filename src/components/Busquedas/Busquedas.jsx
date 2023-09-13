@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { useEffect, useState } from 'react'
 import { HashLoader } from 'react-spinners'
 import CardItem from './CardItem'
@@ -14,7 +13,7 @@ const Busquedas = () => {
         const data = await response.json()
         setBusquedas(data.payload)
       } catch (err) {
-        console.log(err)
+        console.error(err)
       } finally {
         setLoading(false)
       }

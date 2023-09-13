@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
 import CardHome from './CardHome'
@@ -31,7 +30,7 @@ const Home = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.05, duration: 0.1 }}
+              transition={{ delay: index * 0.04, duration: 0.1 }}
               className="textLetter"
             >
               {letter}
@@ -48,14 +47,14 @@ const Home = () => {
         </motion.div>
       </div>
       <div className="homeProcess">
-      <h2 className="fw-bold">Ventajas Competitivas</h2>
+        <h2 className="fw-bold">Ventajas Competitivas</h2>
         <motion.div
-        ref={ref}
-        initial='hidden'
-        animate={inView ? 'visible' : 'hidden'}
-        transition={{ delay: 0.5, duration: 0.4 }}
-        variants={fadeInAnimation}
-        className="firstRow">
+          ref={ref}
+          initial='hidden'
+          animate={inView ? 'visible' : 'hidden'}
+          transition={{ delay: 2, duration: 0.4 }}
+          variants={fadeInAnimation}
+          className="firstRow">
           <CardHome titulo={'Estrategia de búsqueda'} imagen={estrategia} texto={texto1} />
           <CardHome titulo={'Atracción del talento'} imagen={atraccion} texto={texto2} />
           <CardHome titulo={'Seguimiento y feedback'} imagen={definicion} texto={texto3} />

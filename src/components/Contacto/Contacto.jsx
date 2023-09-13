@@ -37,7 +37,7 @@ const Contacto = () => {
     })
       .then(response => response.json())
       .then(data => console.log(data))
-      .catch(err => console.log(err))
+      .catch(err => console.error(err))
 
     setNombreApellido('')
     setEmpresa('')

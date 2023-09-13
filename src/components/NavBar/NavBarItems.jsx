@@ -71,55 +71,55 @@ const NavBarItems = ({ isInFooter }) => {
   if (accessToken) {
     if (isInFooter) {
       return (
-                <ul className="navbar-nav">
-                    {itemsLogged.map((item) => {
-                      return (
-                            <li className="nav-item" key={item.title}>
-                                <NavLink className="nav-link fw-bold" to={item.url}> {item.title} </NavLink>
-                            </li>
-                      )
-                    })}
-                </ul>
+        <ul className="navbar-nav">
+          {itemsLogged.map((item) => {
+            return (
+              <li className="nav-item" key={item.title}>
+                <NavLink className="nav-link fw-bold" to={item.url}> {item.title} </NavLink>
+              </li>
+            )
+          })}
+        </ul>
       )
     } else {
       return (
 
-                <ul className="navbar-nav gap-3">
-                    {itemsLogged.map((item) => {
-                      return (
-                            <li className="nav-item" key={item.title}>
-                                <NavLink className="nav-link fw-bold" to={item.url}> {item.title} </NavLink>
-                            </li>
-                      )
-                    })}
-                </ul>
+        <ul className="navbar-nav gap-3">
+          {itemsLogged.map((item) => {
+            return (
+              <li className="nav-item" key={item.title}>
+                <NavLink className="nav-link fw-bold" to={item.url}> {item.title} </NavLink>
+              </li>
+            )
+          })}
+        </ul>
       )
     }
   } else {
     if (isInFooter) {
       return (
-                <ul className="navbar-nav">
-                    {items.map((item) => {
-                      return (
-                            <li className="nav-item" key={item.title}>
-                                <NavLink className="nav-link fw-bold" to={item.url}> {item.title} </NavLink>
-                            </li>
-                      )
-                    })}
-                </ul>
+        <ul className="navbar-nav">
+          {items.map((item) => {
+            return (
+              <li className="nav-item" key={item.title}>
+                <NavLink className="nav-link fw-bold" to={item.url}> {item.title} </NavLink>
+              </li>
+            )
+          })}
+        </ul>
       )
     } else {
       return (
 
-                <ul className="navbar-nav gap-3">
-                    {items.map((item) => {
-                      return (
-                            <li className="nav-item" key={item.title}>
-                                <NavLink className="nav-link fw-bold" to={item.url}> {item.title} </NavLink>
-                            </li>
-                      )
-                    })}
-                </ul>
+        <ul className="navbar-nav gap-3">
+          {items.map((item) => {
+            return (
+              <li className="nav-item" key={item.title}>
+                <NavLink className="nav-link fw-bold" to={item.url}> {item.title} </NavLink>
+              </li>
+            )
+          })}
+        </ul>
       )
     }
   }

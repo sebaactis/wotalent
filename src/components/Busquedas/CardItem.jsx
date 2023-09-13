@@ -1,5 +1,3 @@
-/* eslint-disable react/prop-types */
-import React from 'react'
 import Card from 'react-bootstrap/Card'
 import { Link } from 'react-router-dom'
 
@@ -7,7 +5,7 @@ const CardItem = ({ busqueda }) => {
   return (
         <Card className="cardBusqueda">
             <Card.Body className="cardBody">
-                    <Card.Title className="cardTitle">{busqueda.nombre}</Card.Title>
+                <Card.Title className="cardTitle">{busqueda.nombre}</Card.Title>
                 <Card.Text className="cardText">
                     {busqueda.resumen}
                 </Card.Text>

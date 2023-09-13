@@ -1,5 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
-/* eslint-disable react/prop-types */
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 
@@ -16,7 +14,7 @@ const Grafico = ({ icono, titulo, descripcion, width, padding, margin }) => {
     ref={ref}
     initial="hidden"
     animate={inView ? 'visible' : 'hidden'}
-    transition={{ delay: 0.7, duration: 0.3 }}
+    transition={{ delay: 1, duration: 0.3 }}
     variants={fadeInAnimation}
     >
 

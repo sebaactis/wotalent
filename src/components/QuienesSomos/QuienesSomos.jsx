@@ -1,4 +1,3 @@
-/* eslint-disable react/react-in-jsx-scope */
 import icono from '../../assets/images/icono.png'
 import icono2 from '../../assets/images/icono2.png'
 import icono3 from '../../assets/images/icono3.png'
@@ -9,10 +8,8 @@ const QuienesSomos = () => {
   return (
 
     <section className="quienesSomosMain">
-      {/* <h1 className="fw-bold titleQuienes my-3">¿Quiénes somos?</h1> */}
-      {/* <div className="line"></div> */}
       <div className="imgQuienes">
-          <h1 className="titleQuienes">Quienes somos</h1>
+        <h1 className="titleQuienes">Quienes somos</h1>
       </div>
 
       <div className="graficosQuienesSomos container">

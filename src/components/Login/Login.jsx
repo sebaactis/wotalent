@@ -39,7 +39,7 @@ const Login = () => {
           setBoton(false)
         })
         .catch(error => {
-          console.log(error)
+          console.error(error)
         })
     }
 
@@ -47,28 +47,28 @@ const Login = () => {
   }
 
   return (
-        <section className="container sectionLogin">
+    <section className="container sectionLogin">
 
-            <h1 className="fw-bold titleLogin my-3">Login</h1>
-            <div className="line"></div>
+      <h1 className="fw-bold titleLogin my-3">Login</h1>
+      <div className="line"></div>
 
-            <form className="formContainer" onSubmit={handleSubmit}>
+      <form className="formContainer" onSubmit={handleSubmit}>
 
-                <div className="formLoginDiv">
-                    <label htmlFor="email"> Email </label>
-                    <input onChange={(e) => setEmail(e.target.value)} value={email} required="required" type="text" name="email">
-                    </input>
-                </div>
-                <div className="formLoginDiv">
-                    <label htmlFor="password"> Contraseña </label>
-                    <input onChange={(e) => setPassword(e.target.value)} value={password} required="required" type="text" name="password">
-                    </input>
-                </div>
+        <div className="formLoginDiv">
+          <label htmlFor="email"> Email </label>
+          <input onChange={(e) => setEmail(e.target.value)} value={email} required="required" type="text" name="email">
+          </input>
+        </div>
+        <div className="formLoginDiv">
+          <label htmlFor="password"> Contraseña </label>
+          <input onChange={(e) => setPassword(e.target.value)} value={password} required="required" type="text" name="password">
+          </input>
+        </div>
 
-                <button disabled={email === '' || password === ''} onClick={() => setBoton(!boton)}> {boton ? <BeatLoader color={'white'} size={'8px'} /> : 'Ingresar'} </button>
-            </form>
+        <button disabled={email === '' || password === ''} onClick={() => setBoton(!boton)}> {boton ? <BeatLoader color={'white'} size={'8px'} /> : 'Ingresar'} </button>
+      </form>
 
-        </section>
+    </section>
   )
 }
 

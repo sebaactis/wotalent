@@ -5,4 +5,4 @@
 - Se usan diferentes caracteristicas (UseState, UseContext, UseEffect, etc) y diversas librerias (SweetAlert2, Framer-Motion, etc)
 - Esta estilado con SASS y Bootstrap
 - Llamadas a API con Fetch
-- BackEND: https://github.com/sebaactis/wotalent-back
+- Back End: https://github.com/sebaactis/wotalent-back
